@@ -34,13 +34,35 @@
       <ul class="user_menu">
         <li>
           <div class="user_menu_search">
-            <!-- Здесь будет форма поиска -->
-            Поиск
+            <button type="button" name="open_form" aria-label="Открыть форму поиска">Значок лупы</button>
+            <div class="search">
+              <form class="open_search" action="index.html" method="post">
+                <label class="visually-hidden" for="search_form">Что ищем?</label>
+                <input type="text" id="search_form" name="searching" placeholder="Что ищем?">
+              </form>
+            </div>
           </div>
         </li>
         <li>
           <div class="user_menu_signout">
             <button type="button" name="sign">Вход</button>
+            <div class="signout">
+              <form action="">
+                <p class="email_user">
+                  <label class="visually-hidden" for="email_in">Почта для входа</label>
+                  <input type="text" id="email_in" name="email" placeholder="Электронная почта">
+                </p>
+                <p class="password_users">
+                  <label class="visually-hidden" for="password_in">Пароль для входа</label>
+                  <input type="password" name="password" placeholder="Пароль">
+                </p>
+                <button type="submit" name="signout">Войти</button>
+              </form>
+              <p class="help_form_elemnts">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </div>
           </div>
         </li>
         <li>
@@ -51,7 +73,7 @@
       </ul>
       <div class="information_job">
         <span class="information_job_time">С 10 до 20, ежедневно</span>
-        <span class="information_job_number">8 812 450-25-25</span>
+        <a href="tel:88124502525" class="information_job_number">8 812 450-25-25</a>
       </div>
     </header>
 
@@ -161,8 +183,15 @@
         </p>
       </div>
       <section class="map_and_feedback">
+        <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <div class="feedback">
-          <!--В сам секш будет встроена карта, а в этот блок форма обратной связи -->
+            <h5 class="discriptions_feedback">Адрес главного офиса и офлайн магазина:</h5>
+            <p class="place_feedback">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+            <p class="discriptions_contacts">Для заказов по телефону:</p>
+            <p class="contacts_map">
+              <a href="tel:88124502525">8 812 450-25-25</a>
+              <span>(с 10 до 20 ежедневно)</span>
+            </p>
         </div>
       </section>
     </main>
@@ -186,5 +215,24 @@
         <span  class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
       </p>
     </footer>
+    <div class="modal_task_feedback">
+      <h5 class="tittle_modal">Мы обязательно вам ответим!</h5>
+      <form action="">
+        <p class="name_users">
+          <label for="name_user">Ваше имя</label>
+          <input type="text" id="name_user" name="name_user" placeholder="Как вас зовут?">
+        </p>
+        <p class="email_user">
+          <label class="visually-hidden" for="email_in">Почта для входа</label>
+          <input type="text" id="email_in" name="email" placeholder="Электронная почта">
+        </p>
+        <!-- Взял часть формы из хедера. Это ничего страшного, т.к с какой формы будут отправляться данные можно будет настроить Get запромом -->
+        <p class="comment">
+          <label for="user_comment">Ваш комментраий</label>
+          <textarea name="user_comment" id="user_comment" rows="8" cols="80" placeholder="Напишите что-нибудь.."></textarea>
+        </p>
+        <button type="submit" name="done_feedback">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
