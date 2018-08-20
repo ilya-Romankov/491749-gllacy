@@ -102,20 +102,19 @@
       </ul>
       <h1 class="title_catalog">Сливочное мороженое</h1>
       <section class="filter_shop">
-        <form action="">
+        <form action="https://echo.htmlacademy.ru" method="POST">
           <p class="popularity">
             <label for="sort">Сортировка</label>
-            <select class="" id="sort" name="">
+            <select class="" id="sort" name="choose_sort">
               <option value="popularity">По популярности</option>
             </select>
           </p>
           <p class="cost_ice_cream">
             <label>Цена 100 руб - 500 руб<br>
               <input type="range" name="cost_range" value="300" min="100" max="500">
-              <div class="double_range" tabindex="0"></div>
-          </label>
+            </label>
           </p>
-          <p class="fatness">
+          <div class="fatness">
             <p>
               <label class="low_fatness">
                 0%<br>
@@ -140,8 +139,8 @@
                 <input type="radio" name="fatness" value="30+">
               </label>
             </p>
-          </p>
-          <p class="fillers">
+          </div>
+          <div class="fillers">
             <p>
               <label class="chocolate_fillers">
                 Шоколадные<br>
@@ -177,7 +176,7 @@
                 <img src="#" alt="Чекбокс">
               </label>
             </p>
-          </p>
+          </div>
           <button type="submit" name="submit_filter">Применить</button>
         </form>
       </section>
