@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main_header">
-      <a class="logo">
+      <a class="logo" href="index.html">
         <img class="logo_img" src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
       </a>
       <nav class="main_navigation">
@@ -28,9 +28,9 @@
       <ul class="user_menu">
         <li>
           <div class="user_menu_search">
-            <button type="button" name="open_form" aria-label="Открыть форму поиска">Значок лупы</button>
+            <a href="#" aria-label="Открыть форму поиска"><img src="#" alt="Значок лупы">Картинка лупы</a>
             <div class="search">
-              <form class="open_search" action="index.html" method="post">
+              <form  action="https://echo.htmlacademy.ru" method="POST">
                 <label class="visually-hidden" for="search_form">Что ищем?</label>
                 <input type="text" id="search_form" name="searching" placeholder="Что ищем?">
               </form>
@@ -39,16 +39,16 @@
         </li>
         <li>
           <div class="user_menu_signout">
-            <button type="button" name="sign">Вход</button>
+            <a href="#" aria-label="Войти на сайт">Вход</a>
             <div class="signout">
-              <form action="">
+              <form action="https://echo.htmlacademy.ru" method="POST">
                 <p class="email_user">
                   <label class="visually-hidden" for="email_in">Почта для входа</label>
-                  <input type="text" id="email_in" name="email" placeholder="Электронная почта">
+                  <input type="email" id="email_in" name="email" placeholder="Электронная почта">
                 </p>
                 <p class="password_users">
                   <label class="visually-hidden" for="password_in">Пароль для входа</label>
-                  <input type="password" name="password" placeholder="Пароль">
+                  <input type="password" id="password_in" name="password" placeholder="Пароль">
                 </p>
                 <button type="submit" name="signout">Войти</button>
               </form>
@@ -61,7 +61,7 @@
         </li>
         <li>
           <div class="user_menu_my_shop">
-            <button type="button" name="my_shop">2 товара</button>
+            <a href="#" aria-label="Просмотреть выбранные товары">2 товара</a>
             <table class="basket">
               <tr>
                 <td class="img_basket_items_and_discription">
@@ -315,10 +315,10 @@
     </main>
     <footer class="main_footer">
       <p class="social">
-        <a href="#" class="social_link twit"><img src="img/twitter.svg" alt="Твиттер" width="32" height="32"></a>
-        <a href="#" class="social_link inst"><img src="img/inst.svg" alt="Инстаграмм" width="32" height="32"></a>
-        <a href="#" class="social_link face"><img src="img/fb.svg" alt="Фейсбук" width="32" height="32"></a>
-        <a href="#" class="social_link vk"><img src="img/vk.svg" alt="Вк" width="32" height="32"></a>
+        <a href="#" class="social_link twit" aria-label="Смотрите нас в твитере"></a>
+        <a href="#" class="social_link inst" aria-label="Смотрите нас в инстаграмме"></a>
+        <a href="#" class="social_link face" aria-label="Смотрите нас в фейсбуке"></a>
+        <a href="#" class="social_link vk" aria-label="Смотрите нас в вк"></a>
       </p>
       <ul class="other_information">
         <li><a href="#">Для поставщиков</a></li>
@@ -333,24 +333,5 @@
           <span  class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
       </p>
     </footer>
-    <div class="modal_task_feedback">
-      <h5 class="tittle_modal">Мы обязательно вам ответим!</h5>
-      <form action="">
-        <p class="name_users">
-          <label for="name_user">Ваше имя</label>
-          <input type="text" id="name_user" name="name_user" placeholder="Как вас зовут?">
-        </p>
-        <p class="email_user">
-          <label class="visually-hidden" for="email_in">Почта для входа</label>
-          <input type="text" id="email_in" name="email" placeholder="Электронная почта">
-        </p>
-        <!-- Взял часть формы из хедера. Это ничего страшного, т.к с какой формы будут отправляться данные можно будет настроить Get запромом -->
-        <p class="comment">
-          <label for="user_comment">Ваш комментраий</label>
-          <textarea name="user_comment" id="user_comment" rows="8" cols="80" placeholder="Напишите что-нибудь.."></textarea>
-        </p>
-        <button type="submit" name="done_feedback">Отправить</button>
-      </form>
-    </div>
   </body>
 </html>
