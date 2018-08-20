@@ -32,7 +32,8 @@
             <div class="search">
               <form  action="https://echo.htmlacademy.ru" method="POST">
                 <label class="visually-hidden" for="search_form">Что ищем?</label>
-                <input type="text" id="search_form" name="searching" placeholder="Что ищем?">
+                <input type="search" id="search_form" name="searching" placeholder="Что ищем?">
+                <button type="submit" name="done_search" aria-label="Искать ваш запрос">Искать</button>
               </form>
             </div>
           </div>
@@ -110,32 +111,32 @@
             </select>
           </p>
           <p class="cost_ice_cream">
-            <label>Цена 100 руб - 500 руб<br>
+            <label>Цена 100 руб - 500 руб
               <input type="range" name="cost_range" value="300" min="100" max="500">
             </label>
           </p>
           <div class="fatness">
             <p>
               <label class="low_fatness">
-                0%<br>
+                0%
                 <input type="radio" name="fatness" value="0">
               </label>
             </p>
             <p>
               <label class="middle_fatness">
-                до 10%<br>
+                до 10%
                 <input type="radio" name="fatness" value="10">
               </label>
             </p>
             <p>
               <label class="high_fatness">
-                до 30%<br>
+                до 30%
                 <input type="radio" name="fatness" value="30">
               </label>
             </p>
             <p>
               <label class="over_fatness">
-                Выше 30%<br>
+                Выше 30%
                 <input type="radio" name="fatness" value="30+">
               </label>
             </p>
@@ -143,37 +144,32 @@
           <div class="fillers">
             <p>
               <label class="chocolate_fillers">
-                Шоколадные<br>
+                Шоколадные
                 <input class="visually-hidden" type="checkbox" name="fillers_chocolate" value="chocolate">
-                <img src="#" alt="Чекбокс">
               </label>
             </p>
             <p>
               <label class="sugar_fillers">
-                Сахарные присыпки<br>
+                Сахарные присыпки
                 <input class="visually-hidden" type="checkbox" name="fillers_sugar" value="sugar">
-                <img src="#" alt="Чекбокс">
               </label>
             </p>
             <p>
               <label class="fruct_fillers">
-                Фрукты<br>
+                Фрукты
                 <input class="visually-hidden" type="checkbox" name="fillers_fruct" value="fruct">
-                <img src="#" alt="Чекбокс">
               </label>
             </p>
             <p>
               <label class="syrup_fillers">
-                Сироп<br>
+                Сироп
                 <input class="visually-hidden" type="checkbox" name="fillers_syrup" value="syrup">
-                <img src="#" alt="Чекбокс">
               </label>
             </p>
             <p>
               <label class="jam_fillers">
-                Джем<br>
+                Джем
                 <input class="visually-hidden" type="checkbox" name="fillers_jam" value="jam">
-                <img src="#" alt="Чекбокс">
               </label>
             </p>
           </div>
@@ -314,10 +310,10 @@
     </main>
     <footer class="main_footer">
       <p class="social">
-        <a href="#" class="social_link twit" aria-label="Смотрите нас в твитере"></a>
-        <a href="#" class="social_link inst" aria-label="Смотрите нас в инстаграмме"></a>
-        <a href="#" class="social_link face" aria-label="Смотрите нас в фейсбуке"></a>
-        <a href="#" class="social_link vk" aria-label="Смотрите нас в вк"></a>
+        <a href="#" class="social_link twit" aria-label="Смотрите нас в твитере"><span class="visually-hidden">Смотрите нас в твиттере</span></a>
+        <a href="#" class="social_link inst" aria-label="Смотрите нас в инстаграмме"><span class="visually-hidden">Смотрите нас в инстаграмме</span></a>
+        <a href="#" class="social_link face" aria-label="Смотрите нас в фейсбуке"><span class="visually-hidden">Смотрите нас в фейсбуке</span></a>
+        <a href="#" class="social_link vk" aria-label="Смотрите нас в вк"><span class="visually-hidden">Смотрите нас в Вконтакте</span></a>
       </p>
       <ul class="other_information">
         <li><a href="#">Для поставщиков</a></li>
