@@ -4,18 +4,13 @@ body {
 
   font-family: 'Roboto','Arial', sans-serif;
   font-size: 14px;
-<<<<<<< HEAD
   line-height: 1.2;
-=======
-  line-height: 1;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   font-weight: bold;
   color: #ffffff;
 
   background-color: #849d8f;
 
 }
-<<<<<<< HEAD
 
 a {
   text-decoration: none;
@@ -36,32 +31,18 @@ a {
   clip:
   rect(0 0 0 0);
   overflow: hidden;
-=======
-.visually-hidden {
-  display: none;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
 }
 .slider_btn {
   width: 21px;
   height: 21px;
-<<<<<<< HEAD
   background-color: rgba(0,0,0,0);
-=======
-  background-color: #849d8f;/*Не знаю как сделать полость внутри кнопки, поэтому пока так*/
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   border: 2px solid white;
   border-radius: 50%;
 }
 .slider_btn:hover {
-<<<<<<< HEAD
   background-color: rgba(248, 247, 244, 0.4);
 }
 .slider_btn:active,.slider_btn:focus {
-=======
-  background-color: #f8f7f4;
-}
-.slider_btn:focus {
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   background-color: #ffffff;
 }
 
@@ -71,12 +52,7 @@ a {
 .main_navigation_items a {
   font-size: 16px;
   font-weight: bold;
-<<<<<<< HEAD
   line-height:18px;
-=======
-  font-stretch: normal;
-  line-height: 1.13;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: white;
 }
 .main_navigation_items a:hover {
@@ -95,11 +71,7 @@ a {
 }
 .fall_nav_main_header a {
   font-size: 14px;
-<<<<<<< HEAD
   line-height: 14px;
-=======
-  line-height: 1.14;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #323232;
   font-weight: normal;
   text-decoration: none;
@@ -120,41 +92,25 @@ a.another {
   list-style: none;
 }
 .user_menu_search  a {
-<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 0.2);
-=======
-  opacity: 0.2;
-  background-color:#ffffff;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
 }
 .search input[type="search"] {
   width: 311px;
   height: 44px;
-<<<<<<< HEAD
   font-size: 16px;
    font-weight: bold;
    color: #323232;
    line-height: 24px;
-=======
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   background-color: #ffffff;
   border: solid 1px #d3d3d2;
   border-radius: 5px;
 }
 .search button {
-<<<<<<< HEAD
-=======
-  width: 100px;
-  height: 44px;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   background-image: linear-gradient(to top, #e74a35, #f26843);
   font-size: 18px;
   font-weight: bold;
   color: white;
-<<<<<<< HEAD
   line-height: 16px;
-=======
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   box-shadow: 0px 1px 2px 0 #ac1000;
   border-radius: 20px;
   border: none;
@@ -171,19 +127,10 @@ a.another {
 
 .user_menu_signout > a {
   font-size: 14px;
-<<<<<<< HEAD
   font-weight: 500;
   color: #ffffff;
 }
 .user_menu button {
-=======
-  font-weight: normal;
-  color: #ffffff;
-}
-.user_menu button {
-  width: 100px;
-  height: 44px;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   background-image: linear-gradient(to top, #e74a35, #f26843);
   font-size: 18px;
   font-weight: bold;
@@ -194,11 +141,7 @@ a.another {
   border: none;
 }
 .user_menu button:hover {
-<<<<<<< HEAD
   background-image:  linear-gradient(to top, #e74a35, #f26843), linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-=======
-  background-image:  linear-gradient(to top, #e74a35, #f26843), linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   box-shadow: 0px 2px 2px 0 #ac1000;
 }
 .user_menu button:active {
@@ -206,7 +149,6 @@ a.another {
   box-shadow: inset 0px 2px 2px 0 #942718;
 }
 
-<<<<<<< HEAD
 p.email_user_header input[type="email"] {
   width: 241px;
   height: 44px;
@@ -225,12 +167,6 @@ p.password_users_header input[type="password"] {
   font-weight: bold;
   color: #323232;
   line-height: 24px;
-=======
-.email_user input[type="email"],
-.password_users input[type="password"] {
-  width: 241px;
-  height: 44px;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   background-color: #ffffff;
   border: solid 1px #d3d3d2;
   border-radius: 5px;
@@ -239,11 +175,7 @@ p.password_users_header input[type="password"] {
 .help_form_elemnts a {
    font-size: 13px;
    font-weight: normal;
-<<<<<<< HEAD
    line-height: 24px;
-=======
-   line-height: 1.85;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
    color: #323232;
 }
 
@@ -256,31 +188,19 @@ p.password_users_header input[type="password"] {
 
 .user_menu_my_shop a {
   font-size: 14px;
-<<<<<<< HEAD
   font-weight: 500;
-=======
-  font-weight: normal;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #ffffff;
 }
 
 .information_job_time {
   font-size: 14px;
   font-weight: bold;
-<<<<<<< HEAD
   line-height: 14px;
-=======
-  line-height: 1.14;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
 }
 .information_job_number {
   font-size: 22px;
    font-weight: bold;
-<<<<<<< HEAD
    line-height: 24px;
-=======
-   line-height: 1.09;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
    color: #ffffff;
    text-decoration: none;
 }
@@ -296,7 +216,6 @@ p.password_users_header input[type="password"] {
 .title_banners {
   font-size: 35px;
   font-weight: bold;
-<<<<<<< HEAD
   line-height: 41px;
   color: #ffffff;
 }
@@ -315,51 +234,21 @@ p.password_users_header input[type="password"] {
    background-image: linear-gradient(to top, #ca3824, #f26843);
    box-shadow: 0px 2px 2px 0 rgba(85, 8, 0, 0.54);
    text-decoration: none;
-=======
-  line-height: 1.17;
-  color: #ffffff;
-}
-.discriptions_event {
-  font-size: 18.5px;
-  font-weight: bold;
-  line-height: 1.16;
-  color: #ffffff;
-}
-.banners_event a {
-  font-size: 18.5px;
-  font-weight: bold;
-  line-height: 1.32;
-  color: #ffffff;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
-  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
-  text-decoration: none;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
 }
 
 .shop_cards {
   list-style: none;
 }
-<<<<<<< HEAD
 .shop_card_item:hover {
-=======
-li.shop_card_item:hover {
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   background-color: rgba(255, 255, 255, 0.2);
 }
 .shop_card_item > a {
   font-size: 18px;
   font-weight: bold;
-<<<<<<< HEAD
   line-height: 24px;
   color: #fefefe;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 1px 2px 0 #ac1000;
-=======
-  line-height: 1.33;
-  color: #ffffff;
-  background-image: linear-gradient(to top, #e74a35, #f26843);
-  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   text-decoration: none;
 }
 .visibli_part_shop_card img {
@@ -368,42 +257,25 @@ li.shop_card_item:hover {
 .cost {
   font-size: 45px;
   font-weight: bold;
-<<<<<<< HEAD
   line-height: 45px;
-=======
-  line-height: 1;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #ffffff;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 .cost span {
   font-size: 30px;
-<<<<<<< HEAD
   line-height: 22px;
 }
 .discription_part_shop_card a {
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
-=======
-  line-height: 1.5;
-}
-.discription_part_shop_card a {
-  font-size: 17px;
-  font-weight: normal;
-  line-height: 1.26;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #ffffff;
 }
 
 .title_about {
   font-size: 24px;
   font-weight: 500;
-<<<<<<< HEAD
   line-height: 30px;
-=======
-  line-height: 1.25;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #323232;
 }
 .about_dicription {
@@ -412,66 +284,41 @@ li.shop_card_item:hover {
 .about li {
   font-size: 16px;
   font-weight: normal;
-<<<<<<< HEAD
    line-height: 22px;
-=======
-   line-height: 1.38;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
    color: #323232;
 }
 
 .title_guids {
   font-size: 16px;
   font-weight: 500;
-<<<<<<< HEAD
   line-height: 22px;
-=======
-  line-height: 1.38;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #323232;
 }
 .title_article a {
   font-size: 24px;
   font-weight: bold;
-<<<<<<< HEAD
   line-height: 30px;
-=======
-  line-height: 1.25;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #323232;
 }
 
 .subscribe_discriptions {
   font-size: 16px;
   font-weight: normal;
-<<<<<<< HEAD
   line-height: 22px;
-=======
-  line-height: 1.38;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #5a5a5a;
 }
 .subscribe_forms input[type="email"] {
   width: 368px;
-<<<<<<< HEAD
   height: 44px;
   font-size: 14px;
   font-weight: normal;
    color: #999999;
    line-height: 24px;
-=======
-    height: 44px;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   border-radius: 5px;
   background-color: #ffffff;
   border: solid 1px rgba(178, 178, 178, 0.52);
 }
 .subscribe_forms button {
-<<<<<<< HEAD
-=======
-  width: 129px;
-  height: 44px;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   background-image: linear-gradient(to top, #e74a35, #f26843);
   font-size: 18px;
   font-weight: bold;
@@ -487,62 +334,38 @@ li.shop_card_item:hover {
 .feedback h5 {
   font-size: 14px;
   font-weight: normal;
-<<<<<<< HEAD
    line-height: 20px;
-=======
-   line-height: 1.43;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
    color: #323232;
 }
 .place_feedback {
   font-size: 18px;
   font-weight: bold;
-<<<<<<< HEAD
   line-height: 24px;
-=======
-  line-height: 1.33;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #323232;
 }
 .discriptions_contacts {
   font-size: 14px;
   font-weight: normal;
-<<<<<<< HEAD
   line-height: 20px;
-=======
-  line-height: 1.43;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #323232;
 }
 .contacts_map a {
   font-size: 18px;
   font-weight: bold;
-<<<<<<< HEAD
   line-height: 24px;
-=======
-  line-height: 1.22;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #323232;
   text-decoration: none;
 }
 .contacts_map span {
   font-size: 14px;
   font-weight: normal;
-<<<<<<< HEAD
   line-height:22px ;
-=======
-  line-height: 1.57;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #323232;
 }
 .feedback_link {
   font-size: 18px;
   font-weight: bold;
-<<<<<<< HEAD
   line-height: 24px;
-=======
-  line-height: 1.33;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #fefefe;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -554,11 +377,7 @@ li.shop_card_item:hover {
 .other_information  a {
   font-size: 13px;
   font-weight: normal;
-<<<<<<< HEAD
   line-height: 18px;
-=======
-  line-height: 1.38;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #ffffff;
 }
 a.another_other {
@@ -568,21 +387,13 @@ a.another_other {
 .creator_discriptions {
   font-size: 12px;
   font-weight: normal;
-<<<<<<< HEAD
   line-height: 18px;
-=======
-  line-height: 1.5;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #fefefe;
 }
 .creator_discriptions a {
   font-size: 12px;
   font-weight: normal;
-<<<<<<< HEAD
   line-height: 18px;
-=======
-  line-height: 1.5;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #fefefe;
 }
 
@@ -590,11 +401,6 @@ a.another_other {
   background-color: #ffffff;
 }
 .modal_task_feedback button {
-<<<<<<< HEAD
-=======
-  width: 139px;
-  height: 44px;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   background-image: linear-gradient(to top, #e74a35, #f26843);
   font-size: 18px;
   font-weight: bold;
@@ -606,11 +412,7 @@ a.another_other {
 .tittle_modal {
   font-size: 24px;
   font-weight: 500;
-<<<<<<< HEAD
   line-height: 28px;
-=======
-  line-height: 1.17;
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
   color: #323232;
 }
 .name_users input[type="text"] {
@@ -618,35 +420,26 @@ a.another_other {
   height: 44px;
   background-color: #ffffff;
   border: solid 1px rgba(178, 178, 178, 0.52);
-<<<<<<< HEAD
   font-size: 16px;
   font-weight: bold;
   color: #323232;
   line-height: 24px;
   border-radius: 5px;
-=======
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
 }
 .email_user input[type="email"] {
   width: 267px;
   height: 44px;
   background-color: #ffffff;
-<<<<<<< HEAD
   border: solid 1px rgba(178, 178, 178, 0.52);
   font-size: 16px;
   font-weight: bold;
   color: #323232;
   line-height: 24px;
   border-radius: 5px;
-=======
-  background-color: var(--white);
-  border: solid 1px rgba(178, 178, 178, 0.52);
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
 }
 .comment textarea {
   width: 428px;
   height: 155px;
-<<<<<<< HEAD
   font-size: 16px;
   font-weight: bold;
   color: #323232;
@@ -654,8 +447,4 @@ a.another_other {
   background-color: #ffffff;
   border: solid 1px rgba(178, 178, 178, 0.52);
   border-radius: 5px;
-=======
-  background-color: #ffffff;
-  border: solid 1px rgba(178, 178, 178, 0.52);
->>>>>>> fc47b998d1e032b59d82a30ec2efe8a66dbd7a86
 }
