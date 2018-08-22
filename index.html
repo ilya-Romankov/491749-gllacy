@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="slider_interactive">
@@ -20,7 +23,7 @@
           <li>
             <a href="#">Каталог</a>
             <ul class="fall_nav_main_header">
-              <li><a href="#">Новинки</a></li>
+              <li><a class="another" href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лёд</a></li>
@@ -49,11 +52,11 @@
             <a href="#" aria-label="Войти на сайт">Вход</a>
             <div class="signout">
               <form action="https://echo.htmlacademy.ru" method="POST">
-                <p class="email_user">
+                <p class="email_user_header">
                   <label class="visually-hidden" for="email_in">Почта для входа</label>
                   <input type="email" id="email_in" name="email" placeholder="Электронная почта">
                 </p>
-                <p class="password_users">
+                <p class="password_users_header">
                   <label class="visually-hidden" for="password_in">Пароль для входа</label>
                   <input type="password" id="password_in" name="password" placeholder="Пароль">
                 </p>
@@ -106,7 +109,7 @@
             <div class="visibli_part_shop_card">
               <span class="mark_best">Хит</span>
               <img src="img/index-shop-card1.jpg" alt="Картинка мороженного" width="267" height="267">
-              <span class="cost">310р/<span>кг</span></span>
+              <span class="cost">310₽/<span>кг</span></span>
             </div>
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -117,7 +120,7 @@
             <div class="visibli_part_shop_card">
               <span class="mark_best">Хит</span>
               <img src="img/index-shop-card2.jpg" alt="Картинка мороженного" width="267" height="267">
-              <span class="cost">310р/<span>кг</span></span>
+              <span class="cost">310₽/<span>кг</span></span>
             </div>
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -128,7 +131,7 @@
             <div class="visibli_part_shop_card">
               <span class="mark_best">Хит</span>
               <img src="img/index-shop-card3.jpg" alt="Картинка мороженного" width="267" height="267">
-              <span class="cost">310р/<span>кг</span></span>
+              <span class="cost">310₽/<span>кг</span></span>
             </div>
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -139,7 +142,7 @@
             <div class="visibli_part_shop_card">
               <span class="mark_best">Хит</span>
               <img src="img/index-shop-card4.jpg" alt="Картинка мороженного" width="267" height="267">
-              <span class="cost">310р/<span>кг</span></span>
+              <span class="cost">310₽/<span>кг</span></span>
             </div>
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -182,6 +185,15 @@
           вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
           ерунды. Честно=)
         </p>
+        <div class="subscribe_forms">
+          <form  action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+              <label class="visually-hidden" for="sub">Ваш ебаил</label>
+              <input type="email" name="sub" id="sub" placeholder="Электронная почта">
+            <p>
+            <button type="submit" name="sub_done">Отправить</button>
+          </form>
+        </div>
       </div>
       <section class="map_and_feedback">
         <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -205,7 +217,7 @@
         <a href="#" class="social_link vk" aria-label="Смотрите нас в вк"><span class="visually-hidden">Смотрите нас в Вконтакте</span></a>
       </p>
       <ul class="other_information">
-        <li><a href="#">Для поставщиков</a></li>
+        <li><a class="another_other" href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандырты</a></li>
@@ -221,7 +233,7 @@
       <h5 class="tittle_modal">Мы обязательно вам ответим!</h5>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <p class="name_users">
-          <label for="name_user">Ваше имя</label>
+          <label for="name_user" class="visually-hidden">Ваше имя</label>
           <input type="text" id="name_user" name="name_user" placeholder="Как вас зовут?">
         </p>
         <p class="email_user">
@@ -230,7 +242,7 @@
         </p>
         <!-- Взял часть формы из хедера. Это ничего страшного, т.к с какой формы будут отправляться данные можно будет настроить Get запромом -->
         <p class="comment">
-          <label for="user_comment">Ваш комментраий</label>
+          <label for="user_comment" class="visually-hidden">Ваш комментраий</label>
           <textarea name="user_comment" id="user_comment" rows="8" cols="80" placeholder="Напишите что-нибудь.."></textarea>
         </p>
         <button type="submit" name="done_feedback">Отправить</button>
