@@ -39,7 +39,7 @@
               <form action="https://echo.htmlacademy.ru" method="POST">
                 <label class="visually-hidden" for="search_form">Что ищем?</label>
                 <input type="search" id="search_form" name="searching" placeholder="Что ищем?">
-                <button type="submit" name="done_search" aria-label="Искать ваш запрос">Искать</button>
+                <button class="btn_and_link_style" type="submit" name="done_search" aria-label="Искать ваш запрос">Искать</button>
               </form>
             </div>
           </div>
@@ -57,7 +57,7 @@
                   <label class="visually-hidden" for="password_in">Пароль для входа</label>
                   <input type="password" id="password_in" name="password" placeholder="Пароль">
                 </p>
-                <button type="submit" name="signout">Войти</button>
+                <button class="btn_and_link_style" type="submit" name="signout">Войти</button>
               </form>
               <p class="help_form_elemnts">
                 <a href="#">Забыли пароль?</a>
@@ -91,7 +91,7 @@
               </tr>
               <tr>
                 <td class="final_basket" colspan="3">
-                  <a href="#">Оформить заказ</a>
+                  <a class="btn_and_link_style" href="#">Оформить заказ</a>
                 </td>
               </tr>
             </table>
@@ -114,7 +114,7 @@
       <section class="filter_shop">
         <form action="https://echo.htmlacademy.ru" method="POST">
           <p class="popularity">
-            <label for="sort">Сортировка:</label>
+            <label for="sort" class="label_form_style">Сортировка:</label>
             <select class="choose_sort" id="sort" name="choose_sort">
               <option value="popularity">по популярности</option>
               <option value="low_cost">сначала недорогие</option>
@@ -123,7 +123,7 @@
             </select>
           </p>
           <div class="cost_ice_cream">
-              <label for="cost_range">Цена 100 руб - 500 руб</label>
+              <label for="cost_range" class="label_form_style">Цена 100 руб - 500 руб</label>
               <p class="bg-range">
                 <input type="range" id="cost_range" name="cost_range" value="300" min="100" max="500">
               </p>
@@ -132,25 +132,25 @@
             <p class="disc_fatness">Жирность</p>
             <div class="bg_fatness">
             <p>
-              <label class="low_fatness radio_style">
+              <label class="low_fatness label_form_style">
                 <span class="label_radio">0%</span>
                 <input type="radio" name="fatness" value="0">
               </label>
             </p>
             <p>
-              <label class="middle_fatness radio_style">
+              <label class="middle_fatness label_form_style">
                 <span class="label_radio">до 10%</span>
                 <input type="radio" name="fatness" value="10">
               </label>
             </p>
             <p>
-              <label class="high_fatness radio_style">
+              <label class="high_fatness label_form_style">
                 <span class="label_radio">до 30%</span>
                 <input type="radio" name="fatness" value="30">
               </label>
             </p>
             <p>
-              <label class="over_fatness radio_style">
+              <label class="over_fatness label_form_style">
                 <span class="label_radio">выше 30%</span>
                 <input type="radio" name="fatness" value="30+">
               </label>
@@ -160,31 +160,31 @@
           <div class="fillers">
             <p>
               <label class="chocolate_fillers">
-                <span class="label_check">Шоколадные</span>
+                <span class="label_check label_form_style">Шоколадные</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_chocolate" value="chocolate">
               </label>
             </p>
             <p>
               <label class="sugar_fillers">
-                <span class="label_check">Сахарные присыпки</span>
+                <span class="label_check label_form_style">Сахарные присыпки</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_sugar" value="sugar">
               </label>
             </p>
             <p>
               <label class="fruct_fillers">
-                <span class="label_check">Фрукты</span>
+                <span class="label_check label_form_style">Фрукты</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_fruct" value="fruct">
               </label>
             </p>
             <p>
               <label class="syrup_fillers">
-                <span class="label_check">Сиропы</span>
+                <span class="label_check label_form_style">Сиропы</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_syrup" value="syrup">
               </label>
             </p>
             <p>
               <label class="jam_fillers">
-                <span class="label_check">Джем</span>
+                <span class="label_check label_form_style">Джем</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_jam" value="jam">
               </label>
             </p>
