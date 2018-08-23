@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
     <header class="main_header">
       <a class="logo" href="index.html">
         <img class="logo_img" src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
       </a>
       <nav class="main_navigation">
-        <ul class = "main_navigation_items">
+        <ul class="main_navigation_items">
           <li>
             <a href="#">Каталог</a>
             <ul class="fall_nav_main_header">
@@ -31,7 +36,7 @@
           <div class="user_menu_search">
             <a href="#" aria-label="Открыть форму поиска"><img src="#" alt="Значок лупы">Картинка лупы</a>
             <div class="search">
-              <form  action="https://echo.htmlacademy.ru" method="POST">
+              <form action="https://echo.htmlacademy.ru" method="POST">
                 <label class="visually-hidden" for="search_form">Что ищем?</label>
                 <input type="search" id="search_form" name="searching" placeholder="Что ищем?">
                 <button type="submit" name="done_search" aria-label="Искать ваш запрос">Искать</button>
@@ -44,11 +49,11 @@
             <a href="#" aria-label="Войти на сайт">Вход</a>
             <div class="signout">
               <form action="https://echo.htmlacademy.ru" method="POST">
-                <p class="email_user">
+                <p class="email_user_header">
                   <label class="visually-hidden" for="email_in">Почта для входа</label>
                   <input type="email" id="email_in" name="email" placeholder="Электронная почта">
                 </p>
-                <p class="password_users">
+                <p class="password_users_header">
                   <label class="visually-hidden" for="password_in">Пароль для входа</label>
                   <input type="password" id="password_in" name="password" placeholder="Пароль">
                 </p>
@@ -67,23 +72,26 @@
             <table class="basket">
               <tr>
                 <td class="img_basket_items_and_discription">
-                  <img  src="img/index-shop-card1.jpg" alt="Изображение мороженого" width="33" height="33">
-                  Пломбир с апельсиновым джемом
+                  <img src="img/index-shop-card1.jpg" alt="Изображение мороженого" width="33" height="33"> Пломбир с апельсиновым джемом
                 </td>
                 <td>1,5кг * <span class="decor_basket_cost">200</span></td>
                 <td class="cost_basket_item">300 руб</td>
               </tr>
               <tr>
                 <td class="img_basket_items_and_discription">
-                  <img  src="img/index-shop-card2.jpg" alt="Изображение мороженого" width="33" height="33">
-                  Клубничный пломбир с присыпкой из белого шоколада
+                  <img src="img/index-shop-card2.jpg" alt="Изображение мороженого" width="33" height="33"> Клубничный пломбир с присыпкой из белого шоколада
                 </td>
                 <td>1,5кг * <span class="decor_basket_cost">300</span></td>
                 <td class="cost_basket_item">450 руб</td>
               </tr>
               <tr>
                 <td class="basket_all_cost" colspan="3">
-                    Итого: 750 руб
+                  Итого: 750 руб
+                </td>
+              </tr>
+              <tr>
+                <td class="final_basket" colspan="3">
+                  <a href="#">Оформить заказ</a>
                 </td>
               </tr>
             </table>
@@ -106,70 +114,77 @@
       <section class="filter_shop">
         <form action="https://echo.htmlacademy.ru" method="POST">
           <p class="popularity">
-            <label for="sort">Сортировка</label>
-            <select class="" id="sort" name="choose_sort">
-              <option value="popularity">По популярности</option>
+            <label for="sort">Сортировка:</label>
+            <select class="choose_sort" id="sort" name="choose_sort">
+              <option value="popularity">по популярности</option>
+              <option value="low_cost">сначала недорогие</option>
+              <option value="high_cost">сначала дорогие</option>
+              <option value="fatt">по жирности</option>
             </select>
           </p>
-          <p class="cost_ice_cream">
-            <label>Цена 100 руб - 500 руб
-              <input type="range" name="cost_range" value="300" min="100" max="500">
-            </label>
-          </p>
+          <div class="cost_ice_cream">
+              <label for="cost_range">Цена 100 руб - 500 руб</label>
+              <p class="bg-range">
+                <input type="range" id="cost_range" name="cost_range" value="300" min="100" max="500">
+              </p>
+          </div>
           <div class="fatness">
+            <p class="disc_fatness">Жирность</p>
+            <div class="bg_fatness">
             <p>
-              <label class="low_fatness">
-                0%
+              <label class="low_fatness radio_style">
+                <span class="label_radio">0%</span>
                 <input type="radio" name="fatness" value="0">
               </label>
             </p>
             <p>
-              <label class="middle_fatness">
-                до 10%
+              <label class="middle_fatness radio_style">
+                <span class="label_radio">до 10%</span>
                 <input type="radio" name="fatness" value="10">
               </label>
             </p>
             <p>
-              <label class="high_fatness">
-                до 30%
+              <label class="high_fatness radio_style">
+                <span class="label_radio">до 30%</span>
                 <input type="radio" name="fatness" value="30">
               </label>
             </p>
             <p>
-              <label class="over_fatness">
-                Выше 30%
+              <label class="over_fatness radio_style">
+                <span class="label_radio">выше 30%</span>
                 <input type="radio" name="fatness" value="30+">
               </label>
             </p>
           </div>
+          </div>
           <div class="fillers">
             <p>
               <label class="chocolate_fillers">
-                Шоколадные
+                <span class="label_check">Шоколадные</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_chocolate" value="chocolate">
               </label>
             </p>
             <p>
               <label class="sugar_fillers">
-                Сахарные присыпки
+                <span class="label_check">Сахарные присыпки</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_sugar" value="sugar">
               </label>
             </p>
             <p>
               <label class="fruct_fillers">
-                Фрукты
+                <span class="label_check">Фрукты</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_fruct" value="fruct">
               </label>
             </p>
             <p>
               <label class="syrup_fillers">
-                Сироп
+                <span class="label_check">Сиропы</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_syrup" value="syrup">
               </label>
             </p>
             <p>
               <label class="jam_fillers">
-                Джем
+                <span class="label_check">Джем</span>
                 <input class="visually-hidden" type="checkbox" name="fillers_jam" value="jam">
               </label>
             </p>
@@ -302,7 +317,7 @@
         </ul>
       </section>
       <ul class="switch_page">
-        <li><a href="#">1</a></li>
+        <li><a class="active_switch_page" href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
@@ -317,7 +332,7 @@
         <a href="#" class="social_link vk" aria-label="Смотрите нас в вк"><span class="visually-hidden">Смотрите нас в Вконтакте</span></a>
       </p>
       <ul class="other_information">
-        <li><a href="#">Для поставщиков</a></li>
+        <li><a class="another_other" href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандырты</a></li>
@@ -326,8 +341,10 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy-small.svg" alt="Логотип академии" class="creator_logo" width="108" height="39">
         </a>
-          <span  class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
+        <span class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
       </p>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>

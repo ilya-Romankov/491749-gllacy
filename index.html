@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <div class="wrapper">
     <div class="slider_interactive">
       <button class="slider_btn slider_btn_one" type="button" name="one"></button>
       <button class="slider_btn slider_btn_two" type="button" name="two"></button>
@@ -19,7 +23,7 @@
         <img class="logo_img" src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
       </a>
       <nav class="main_navigation">
-        <ul class = "main_navigation_items">
+        <ul class="main_navigation_items">
           <li>
             <a href="#">Каталог</a>
             <ul class="fall_nav_main_header">
@@ -39,7 +43,7 @@
           <div class="user_menu_search">
             <a href="#" aria-label="Открыть форму поиска"><img src="#" alt="Значок лупы">Картинка лупы</a>
             <div class="search">
-              <form  action="https://echo.htmlacademy.ru" method="POST">
+              <form action="https://echo.htmlacademy.ru" method="POST">
                 <label class="visually-hidden" for="search_form">Что ищем?</label>
                 <input type="search" id="search_form" name="searching" placeholder="Что ищем?">
                 <button type="submit" name="done_search" aria-label="Искать ваш запрос">Искать</button>
@@ -87,19 +91,18 @@
     <main class="index_main">
       <div class="slider">
         <h2 class="title_slider">Крем-брюле и пломбир с малиновым джемом</h2>
-        <a href="#">Давайте оба</a><!-- Пока будет ссылка одна ,чтоб видно, что ссылка есть в разметке -->
+        <a href="#">Давайте оба</a>
+        <!-- Пока будет ссылка одна ,чтоб видно, что ссылка есть в разметке -->
       </div>
       <section class="banners">
         <div class="banners_event">
           <h3 class="title_banners">Малинка даром!</h3>
-          <p class="discriptions_event">При покупке 2 кг любого фруктового,
-          добавим в ваш заказ банку малинового варенья бесплатно</p>
+          <p class="discriptions_event">При покупке 2 кг любого фруктового, добавим в ваш заказ банку малинового варенья бесплатно</p>
           <a href="#">Хочу варенье!</a>
         </div>
         <div class="banners_event">
           <h3 class="title_banners">Шоколадки даром!</h3>
-          <p class="discriptions_event">При покупке 2 кг пломбира,
-          добавим в ваш заказ упаковку шоколадкой присыпки бесплатно бесплатно</p>
+          <p class="discriptions_event">При покупке 2 кг пломбира, добавим в ваш заказ упаковку шоколадкой присыпки бесплатно бесплатно</p>
           <a href="#">Хочу шоколадки!</a>
         </div>
       </section>
@@ -156,22 +159,16 @@
           по продаже мороженного собсвтенного производства на развес</h1>
         <ul class="about_dicription">
           <li>
-            Все наше мороженое изготавливается на собственном производстве,
-            с использованием современного оборудования и проверенных временем технологий
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий
           </li>
           <li>
-            Для приготовления мороженного используются настоящие сливки и молоко
-            и молоко высочайшего качества, Все дополнительные ингредеентыи добавки
-            произведены из натурального экологически чистого сырья
+            Для приготовления мороженного используются настоящие сливки и молоко и молоко высочайшего качества, Все дополнительные ингредеентыи добавки произведены из натурального экологически чистого сырья
           </li>
           <li>
-            Закупка ингредиентов  производится только у проверенных фермерсских хозйств
-            и команий , с которыми нас связывает долговременное сотрудничество
+            Закупка ингредиентов производится только у проверенных фермерсских хозйств и команий , с которыми нас связывает долговременное сотрудничество
           </li>
           <li>
-            Доставка нашего мороженного до заказчика осуществялется в специальном термопаке
-            , который не даёт мороженому растатять в пути и позвоялет сохранить
-            превосходный вкус
+            Доставка нашего мороженного до заказчика осуществялется в специальном термопаке , который не даёт мороженому растатять в пути и позвоялет сохранить превосходный вкус
           </li>
         </ul>
       </section>
@@ -181,31 +178,29 @@
       </article>
       <div class="subscribe">
         <p class="subscribe_discriptions">
-          Подпишитесь на нашу сладкую подписку и будете всегда в курсе всего самого
-          вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
-          ерунды. Честно=)
+          Подпишитесь на нашу сладкую подписку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)
         </p>
         <div class="subscribe_forms">
-          <form  action="https://echo.htmlacademy.ru" method="POST">
+          <form action="https://echo.htmlacademy.ru" method="POST">
             <p>
               <label class="visually-hidden" for="sub">Ваш ебаил</label>
               <input type="email" name="sub" id="sub" placeholder="Электронная почта">
-            <p>
-            <button type="submit" name="sub_done">Отправить</button>
+              <p>
+                <button type="submit" name="sub_done">Отправить</button>
           </form>
         </div>
       </div>
       <section class="map_and_feedback">
         <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <div class="feedback">
-            <h5 class="discriptions_feedback">Адрес главного офиса и офлайн магазина:</h5>
-            <p class="place_feedback">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-            <p class="discriptions_contacts">Для заказов по телефону:</p>
-            <p class="contacts_map">
-              <a href="tel:88124502525">8 812 450-25-25</a>
-              <span>(с 10 до 20 ежедневно)</span>
-            </p>
-            <a href="#" class="feedback_link">Форма обратной связи</a>
+          <h5 class="discriptions_feedback">Адрес главного офиса и офлайн магазина:</h5>
+          <p class="place_feedback">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p class="discriptions_contacts">Для заказов по телефону:</p>
+          <p class="contacts_map">
+            <a href="tel:88124502525">8 812 450-25-25</a>
+            <span>(с 10 до 20 ежедневно)</span>
+          </p>
+          <a href="#" class="feedback_link">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -226,7 +221,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy-small.svg" alt="Логотип академии" class="creator_logo" width="108" height="39">
         </a>
-        <span  class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
+        <span class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
       </p>
     </footer>
     <div class="modal_task_feedback">
@@ -248,5 +243,7 @@
         <button type="submit" name="done_feedback">Отправить</button>
       </form>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
