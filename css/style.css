@@ -56,7 +56,14 @@ textarea::placeholder {
   color: #ffffff;
   line-height: 16px;
 }
-
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 27px;
+  padding-right: 27px;
+  box-sizing: border-box;
+}
+/*Декор стили*/
 /*index.html begin*/
 .slider_btn {
   width: 21px;
@@ -273,6 +280,9 @@ p.password_users_header input[type="password"] {
   color: #ffffff;
 }
 
+.about {
+  background-image: url('../img/waffle.png');
+}
 .title_about {
   font-size: 24px;
   font-weight: 500;
@@ -306,7 +316,13 @@ p.password_users_header input[type="password"] {
 }
 
 .subscribe {
-  background-image: url('../img/waffle.png');
+  background-image: url('../img/outdoor_sub_bg.png');
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.sub_bg {
+  background-color: #f8f7f4;
+  border-radius: 20px;
 }
 .subscribe_discriptions {
   font-size: 16px;
@@ -374,6 +390,17 @@ p.password_users_header input[type="password"] {
   color: #fefefe;
 }
 
+.main_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  width: 150px;
+  height: 30px;
+  background-color: white;
+}
 .other_information {
   list-style: none;
 }
@@ -562,4 +589,67 @@ a.active_switch_page {
   background-color: #ffffff;
   color: black;
   border-radius: 50%;
+}
+
+/*Сеточные стили*/
+.slider_interactive {
+  position: absolute;
+}
+
+
+
+
+.banners {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.banners_event {
+  max-width: 560px;
+  min-height: 230px;
+}
+.best_items_shop {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.best_items_shop ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.shop_card_item {
+  width: 267px;
+}
+.about {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.aricle_and_sub_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:40px;
+}
+.aricle_and_sub_wrapper .guids ,
+.aricle_and_sub_wrapper .subscribe {
+  width: 560px;
+}
+
+.map_and_feedback {
+  padding: 0;
+  margin: 0;
+  width: 1200px;
+}
+.position_map_and_feedback {
+  width: 100%;
+  position: relative;
+}
+.feedback {
+  width: 302px;
+  position: absolute;
+  top: 63px;
+  right: 27px;
+
 }
