@@ -15,11 +15,13 @@ body {
 a {
   text-decoration: none;
 }
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-input[type="password"]::placeholder,
-input[type="search"]::placeholder,
-textarea::placeholder {
+.name_users input[type="text"]::placeholder,
+.email_user input[type="email"]::placeholder,
+.email_user_header input[type="email"]::placeholder,
+.password_users_header input[type="password"]::placeholder,
+.search input[type="search"]::placeholder,
+.subscribe_forms input[type="email"]::placeholder,
+.comment textarea::placeholder {
   font-size: 16px;
   font-weight: normal;
   color: #999999;
@@ -482,7 +484,7 @@ a.another_other {
 .basket {
    font-size: 13px;
    font-weight: normal;
-   line-height: normal;
+   line-height: 16px;
    color: #323232;
    background-color: #f8f7f4;
    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -584,6 +586,11 @@ a.another_other {
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
+}
+.switch_page a:hover {
+  background-color: rgba(255,255,255,0.2);
+  cursor: pointer;
+  border-radius: 50%;
 }
 a.active_switch_page {
   background-color: #ffffff;
