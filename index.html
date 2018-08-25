@@ -11,7 +11,6 @@
 
 
 <body>
-  <div class="wrapper">
     <div class="slider_interactive">
       <button class="slider_btn slider_btn_one" type="button" name="one"></button>
       <button class="slider_btn slider_btn_two" type="button" name="two"></button>
@@ -19,6 +18,7 @@
     </div>
 
     <header class="main_header">
+      <div class="wrapper_header wrap">
       <a class="logo">
         <img class="logo_img" src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
       </a>
@@ -83,16 +83,19 @@
         <span class="information_job_time">С 10 до 20, ежедневно</span>
         <a href="tel:88124502525" class="information_job_number">8 812 450-25-25</a>
       </div>
+    </div>
     </header>
 
     <!-- Было принято решение убрать one и two, т.к это может запутать php-программиста.
      Для стилизации можно будет использовать псевдоклассы, поэтому те 2 класса просто лишние. В любом случае
    если JS-программисту понадобится , то он сам пропишет id -->
     <main class="index_main">
+      <div class="main_wrapper wrap">
       <div class="slider">
+        <div class="slider_one">
         <h2 class="title_slider">Крем-брюле и пломбир с малиновым джемом</h2>
-        <a href="#">Давайте оба</a>
-        <!-- Пока будет ссылка одна ,чтоб видно, что ссылка есть в разметке -->
+        <a class="btn_and_link_style slider_link" href="#">Давайте оба</a>
+      </div>
       </div>
       <section class="banners">
         <div class="banners_event">
@@ -196,9 +199,12 @@
       </div>
     </div>
     </div>
+  </div>
       <section class="map_and_feedback">
-        <div class="position_map_and_feedback">
+        <div class="map_wrapper">
         <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
+        </div>
+        <div class="feedback_wrapper">
         <div class="feedback">
           <h5 class="discriptions_feedback">Адрес главного офиса и офлайн магазина:</h5>
           <p class="place_feedback">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -213,6 +219,7 @@
       </section>
     </main>
     <footer class="main_footer">
+      <div class="footer_wrapper wrap">
       <p class="social">
         <a href="#" class="social_link twit" aria-label="Смотрите нас в твитере"><span class="visually-hidden">Смотрите нас в твиттере</span></a>
         <a href="#" class="social_link inst" aria-label="Смотрите нас в инстаграмме"><span class="visually-hidden">Смотрите нас в инстаграмме</span></a>
@@ -231,6 +238,7 @@
         </a>
         <span class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
       </p>
+    </div>
     </footer>
     <div class="modal_task_feedback">
       <h5 class="tittle_modal">Мы обязательно вам ответим!</h5>
@@ -251,7 +259,6 @@
         <button class="btn_and_link_style" type="submit" name="done_feedback">Отправить</button>
       </form>
     </div>
-</div>
 </body>
 
 </html>
