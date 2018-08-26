@@ -11,14 +11,15 @@
 
 
 <body>
-    <div class="slider_interactive">
-      <button class="slider_btn slider_btn_one" type="button" name="one"></button>
-      <button class="slider_btn slider_btn_two" type="button" name="two"></button>
-      <button class="slider_btn slider_btn_three" type="button" name="three"></button>
-    </div>
+  <div class="bg_ice_cream">
+  <div class="slider_interactive">
+    <button class="slider_btn slider_btn_one" type="button" name="one"></button>
+    <button class="slider_btn slider_btn_two" type="button" name="two"></button>
+    <button class="slider_btn slider_btn_three" type="button" name="three"></button>
+  </div>
 
-    <header class="main_header">
-      <div class="wrapper_header wrap">
+  <header class="main_header">
+    <div class="wrapper_header wrap">
       <a class="logo">
         <img class="logo_img" src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
       </a>
@@ -84,18 +85,16 @@
         <a href="tel:88124502525" class="information_job_number">8 812 450-25-25</a>
       </div>
     </div>
-    </header>
+  </header>
 
-    <!-- Было принято решение убрать one и two, т.к это может запутать php-программиста.
-     Для стилизации можно будет использовать псевдоклассы, поэтому те 2 класса просто лишние. В любом случае
-   если JS-программисту понадобится , то он сам пропишет id -->
-    <main class="index_main">
-      <div class="main_wrapper wrap">
+
+  <main class="index_main">
+    <div class="main_wrapper wrap">
       <div class="slider">
         <div class="slider_one">
-        <h2 class="title_slider">Крем-брюле и пломбир с малиновым джемом</h2>
-        <a class="btn_and_link_style slider_link" href="#">Давайте оба</a>
-      </div>
+          <h2 class="title_slider">Крем-брюле и пломбир с малиновым джемом</h2>
+          <a class="btn_and_link_style slider_link" href="#">Давайте оба</a>
+        </div>
       </div>
       <section class="banners">
         <div class="banners_event">
@@ -176,35 +175,35 @@
         </ul>
       </section>
       <div class="aricle_and_sub_wrapper">
-      <article class="guids">
-        <h2 class="title_guids">Новое в нашем блоге</h2>
-        <h3 class="title_article"><a href="#">10 способов сортировки фруктовых щербетов к столу</a></h3>
-      </article>
+        <article class="guids">
+          <h2 class="title_guids">Новое в нашем блоге</h2>
+          <h3 class="title_article"><a href="#">10 способов сортировки фруктовых щербетов к столу</a></h3>
+        </article>
 
 
-      <div class="subscribe">
-        <div class="sub_bg">
-        <p class="subscribe_discriptions">
-          Подпишитесь на нашу сладкую подписку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)
-        </p>
-        <div class="subscribe_forms">
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-              <label class="visually-hidden" for="sub">Ваш ебаил</label>
-              <input type="email" name="sub" id="sub" placeholder="Электронная почта">
-              <p>
+        <div class="subscribe">
+          <div class="sub_bg">
+            <p class="subscribe_discriptions">
+              Подпишитесь на нашу сладкую подписку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)
+            </p>
+            <div class="subscribe_forms">
+              <form action="https://echo.htmlacademy.ru" method="POST">
+                <p>
+                  <label class="visually-hidden" for="sub">Ваш ебаил</label>
+                  <input type="email" name="sub" id="sub" placeholder="Электронная почта">
+                <p>
                 <button class="btn_and_link_style" type="submit" name="sub_done">Отправить</button>
-          </form>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-  </div>
-      <section class="map_and_feedback">
-        <div class="map_wrapper">
+    <section class="map_and_feedback">
+      <div class="map_wrapper">
         <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
-        </div>
-        <div class="feedback_wrapper">
+      </div>
+      <div class="feedback_wrapper">
         <div class="feedback">
           <h5 class="discriptions_feedback">Адрес главного офиса и офлайн магазина:</h5>
           <p class="place_feedback">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -216,10 +215,10 @@
           <a href="#" class="feedback_link">Форма обратной связи</a>
         </div>
       </div>
-      </section>
-    </main>
-    <footer class="main_footer">
-      <div class="footer_wrapper wrap">
+    </section>
+  </main>
+  <footer class="main_footer">
+    <div class="footer_wrapper wrap">
       <p class="social">
         <a href="#" class="social_link twit" aria-label="Смотрите нас в твитере"><span class="visually-hidden">Смотрите нас в твиттере</span></a>
         <a href="#" class="social_link inst" aria-label="Смотрите нас в инстаграмме"><span class="visually-hidden">Смотрите нас в инстаграмме</span></a>
@@ -239,26 +238,27 @@
         <span class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
       </p>
     </div>
-    </footer>
-    <div class="modal_task_feedback">
-      <h5 class="tittle_modal">Мы обязательно вам ответим!</h5>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p class="name_users">
-          <label for="name_user" class="visually-hidden">Ваше имя</label>
-          <input type="text" id="name_user" name="name_user" placeholder="Как вас зовут?">
-        </p>
-        <p class="email_user">
-          <label class="visually-hidden" for="email_modal_in">Почта для входа</label>
-          <input type="email" id="email_modal_in" name="email" placeholder="Электронная почта">
-        </p>
-        <!-- Взял часть формы из хедера. Это ничего страшного, т.к с какой формы будут отправляться данные можно будет настроить Get запромом -->
-        <p class="comment">
-          <label for="user_comment" class="visually-hidden">Ваш комментраий</label>
-          <textarea name="user_comment" id="user_comment" rows="8" cols="80" placeholder="Напишите что-нибудь.."></textarea>
-        </p>
-        <button class="btn_and_link_style" type="submit" name="done_feedback">Отправить</button>
-      </form>
-    </div>
+  </footer>
+  <div class="modal_task_feedback">
+    <h5 class="tittle_modal">Мы обязательно вам ответим!</h5>
+    <form action="https://echo.htmlacademy.ru" method="POST">
+      <p class="name_users">
+        <label for="name_user" class="visually-hidden">Ваше имя</label>
+        <input type="text" id="name_user" name="name_user" placeholder="Как вас зовут?">
+      </p>
+      <p class="email_user">
+        <label class="visually-hidden" for="email_modal_in">Почта для входа</label>
+        <input type="email" id="email_modal_in" name="email" placeholder="Электронная почта">
+      </p>
+      <!-- Взял часть формы из хедера. Это ничего страшного, т.к с какой формы будут отправляться данные можно будет настроить Get запромом -->
+      <p class="comment">
+        <label for="user_comment" class="visually-hidden">Ваш комментраий</label>
+        <textarea name="user_comment" id="user_comment" rows="8" cols="80" placeholder="Напишите что-нибудь.."></textarea>
+      </p>
+      <button class="btn_and_link_style" type="submit" name="done_feedback">Отправить</button>
+    </form>
+  </div>
+</div>
 </body>
 
 </html>
