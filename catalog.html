@@ -10,8 +10,10 @@
 </head>
 
 <body>
-  <div class="wrapper">
+
     <header class="main_header">
+      <div class="wrapper_header wrap">
+        <div class="unity_elemnts_hight">
       <a class="logo" href="index.html">
         <img class="logo_img" src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
       </a>
@@ -98,13 +100,16 @@
           </div>
         </li>
       </ul>
+    </div>
       <div class="information_job">
         <span class="information_job_time">С 10 до 20, ежедневно</span>
         <a href="tel:88124502525" class="information_job_number">8 812 450-25-25</a>
       </div>
+    </div>
     </header>
 
     <main class="catalog_main">
+      <div class="main_wrapper wrap">
       <ul class="bread_crumb">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
@@ -113,6 +118,7 @@
       <h1 class="title_catalog">Сливочное мороженое</h1>
       <section class="filter_shop">
         <form action="https://echo.htmlacademy.ru" method="POST">
+          <div class="wrap_filter">
           <p class="popularity">
             <label for="sort" class="label_form_style">Сортировка:</label>
             <select class="choose_sort" id="sort" name="choose_sort">
@@ -130,7 +136,7 @@
           </div>
           <div class="fatness">
             <p class="disc_fatness">Жирность</p>
-            <div class="bg_fatness">
+            <div class="bg_fatness character_row">
             <p>
               <label class="low_fatness label_form_style">
                 <span class="label_radio">0%</span>
@@ -158,6 +164,8 @@
           </div>
           </div>
           <div class="fillers">
+            <p class="disc_fillers">Наполнители</p>
+            <div class="bg_fillers character_row">
             <p>
               <label class="chocolate_fillers">
                 <span class="label_check label_form_style">Шоколадные</span>
@@ -189,7 +197,9 @@
               </label>
             </p>
           </div>
+          </div>
           <button type="submit" name="submit_filter">Применить</button>
+          </div>
         </form>
       </section>
       <section class="catalog">
@@ -323,8 +333,10 @@
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
       </ul>
+    </div>
     </main>
     <footer class="main_footer">
+      <div class="footer_wrapper wrap">
       <p class="social">
         <a href="#" class="social_link twit" aria-label="Смотрите нас в твитере"><span class="visually-hidden">Смотрите нас в твиттере</span></a>
         <a href="#" class="social_link inst" aria-label="Смотрите нас в инстаграмме"><span class="visually-hidden">Смотрите нас в инстаграмме</span></a>
@@ -343,8 +355,9 @@
         </a>
         <span class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
       </p>
+    </div>
     </footer>
-  </div>
+
 </body>
 
 </html>

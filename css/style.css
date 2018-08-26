@@ -65,7 +65,7 @@ a {
   line-height: 16px;
 }
 .wrap {
-  width: 1160px;
+  width: 1172px;
   margin: 0 auto;
 }
 /*Декор стили*/
@@ -278,10 +278,15 @@ p.password_users_header input[type="password"] {
 
 .shop_cards {
   list-style: none;
+  box-sizing: border-box;
+}
+li.shop_card_item {
+  width: 293px;
+  box-sizing: border-box;
+  padding: 0 13px 0 13px;
 }
 .shop_card_item:hover {
   background-color: rgba(255, 255, 255, 0.2);
-
 }
 .shop_card_item > a {
   font-size: 18px;
@@ -588,6 +593,9 @@ a.another_other {
 .bg_fatness {
   background-color: rgba(255,255,255, 0.2);
 }
+.bg_fillers {
+  background-color: rgba(255,255,255, 0.2);
+}
 .filter_shop button {
   font-size: 16px;
   font-weight: 500;
@@ -634,7 +642,7 @@ a.active_switch_page {
 
 .wrapper_header {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .information_job {
   margin-left: auto;
@@ -667,7 +675,6 @@ a.active_switch_page {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
 }
 .shop_card_item {
   width: 267px;
@@ -709,4 +716,51 @@ a.active_switch_page {
   position: absolute;
   top: -370px;
   right: 40px;
+}
+
+.fall_nav_main_header,
+.search,
+.signout,
+.basket {
+  display: none;
+}
+
+.unity_elemnts_hight {
+  display: flex;
+}
+.wrap_filter {
+  display: flex;
+  width: 853px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.popularity {
+  width: 196px;
+}
+.cost_ice_cream {
+  width: 220px;
+}
+
+.fatness {
+  width: 415px;
+}
+.fillers {
+  width: 703px;
+}
+.character_row {
+  display: flex;
+  justify-content: space-between;
+}
+.cards_catalog {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.switch_page {
+  display: flex;
+  justify-content: flex-end;
 }
