@@ -115,7 +115,6 @@ a {
 }
 
 .fall_nav_main_header {
-  width: 143px;
   background-color: #f8f7f4;
   list-style: none;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -651,6 +650,9 @@ a.active_switch_page {
   display: block;
     width: 169px;
 }
+.information_job span {
+  text-align: right;
+}
 
 .user_menu {
   display: flex;
@@ -720,14 +722,164 @@ a.active_switch_page {
 
 .fall_nav_main_header,
 .search,
-.signout,
+div.signout,
 .basket {
   display: none;
 }
 
+
 .unity_elemnts_hight {
   display: flex;
 }
+.main_navigation_items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_navigation_items  a {
+  display: block;
+  padding: 7px 13px 8px 14px;
+  border-radius: 20px;
+}
+
+.user_menu li:not(:last-child) {
+  margin-right: 10px;
+}
+.user_menu_search > a {
+  display: block;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+.user_menu_search a::after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url('../img/magnifier.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.user_menu_search a:hover {
+  background-color: #ffffff;
+}
+.user_menu_search a:hover::after {
+  background-image: url('../img/black_magnifilter.svg');
+}
+
+.user_menu_signout >a {
+    display: block;
+    position: relative;
+    padding: 7px 17px 7px 44px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+.user_menu_signout > a:hover {
+  background-color: #ffffff;
+  color:#323232;
+}
+.user_menu_signout > a::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  left: 15px;
+  top: 5px;
+  background-image: url('../img/signout.svg');
+}
+.user_menu_signout > a:hover::before {
+  background-image: url('../img/sign_black.svg');
+}
+
+.user_menu_my_shop > a {
+  display: block;
+  position: relative;
+  padding: 7px 17px 7px 44px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+.user_menu_my_shop a::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  left: 15px;
+  top: 5px;
+  background-image: url('../img/basket.svg');
+}
+
+.main_navigation_items li:first-child {
+  position: relative;
+}
+.fall_nav_main_header  {
+  position: absolute;
+  padding: 0;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.fall_nav_main_header  a {
+  display: block;
+  width: 102px;
+  padding: 9px 20px 9px 21px;
+  border-radius: 0;
+}
+.fall_nav_main_header .another {
+  border-bottom: 1px solid #d1d0ce;
+}
+.sublist_visible:hover .fall_nav_main_header {
+  display: block;
+}
+
+.user_menu_search {
+  position: relative;
+}
+.search {
+  position: absolute;
+  padding: 20px 15px 20px 15px;
+  right:  -10px;
+  top:37px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.user_menu_search:hover .search {
+  display: block;
+}
+.user_menu_signout {
+  position: relative;
+}
+
+
+.user_menu_signout:hover .signout {
+  display: block;
+}
+.signout {
+  position: absolute;
+  right: 0px;
+  top:40px;
+  background-color: #ffffff;
+  display: flex;
+  padding: 0px 20px 20px 20px;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+.signout_wrapper {
+  position: relative;
+}
+.btn_signout_form {
+  display: inline-block;
+  padding: 8px 19px 8px 19px;
+}
+
+.help_form_elemnts {
+  position: absolute;
+  right: 10px;
+  bottom: -15px;
+}
+.help_form_elemnts a {
+  display: block;
+}
+
+
 .wrap_filter {
   display: flex;
   width: 853px;
