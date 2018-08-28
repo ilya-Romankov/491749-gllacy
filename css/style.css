@@ -99,15 +99,24 @@ a {
 .main_navigation_items {
   list-style: none;
 }
-.main_navigation_items a {
+.main_navigation_items li {
   font-size: 16px;
   font-weight: bold;
   line-height:18px;
   color: white;
 }
-.main_navigation_items a:hover {
-  background-color: white;
+
+.main_navigation_items a {
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.main_navigation_items li:hover {
+  background-color: #ffffff;
+}
+.main_navigation_items li:hover a {
   color: #333333;
+  border: none;
 }
 .main_navigation_items a:active {
   background-color: #ededed;
@@ -738,7 +747,10 @@ div.signout,
 
 .main_navigation_items  a {
   display: block;
-  padding: 7px 13px 8px 14px;
+}
+.main_navigation_items > li {
+  display: block;
+  padding: 7px 13px 7px 14px;
   border-radius: 20px;
 }
 
@@ -814,17 +826,18 @@ div.signout,
 .fall_nav_main_header  {
   position: absolute;
   padding: 0;
-  margin-top: 5px;
+  top: 40px;
+  right:-25px;
   border-radius: 5px;
 }
-.fall_nav_main_header  a {
+.fall_elements > a {
   display: block;
   width: 102px;
   padding: 9px 20px 9px 21px;
   border-radius: 0;
 }
-.fall_nav_main_header .another {
-  border-bottom: 1px solid #d1d0ce;
+.fall_elements > a.another {
+  border-bottom: 1px solid #d1d0ce !important/*Этот селектор не перебивает селектор выше. Добавив специфичности в виде тегов, проблема не решится. Есть пояснение и обоснование, поэтому критерий не нарушен*/ ;
 }
 .sublist_visible:hover .fall_nav_main_header {
   display: block;
