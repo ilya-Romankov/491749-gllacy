@@ -114,7 +114,7 @@ a {
 .main_navigation_items li:hover {
   background-color: #ffffff;
 }
-.main_navigation_items li:hover a {
+ .elements_main_navigation_items:hover a {
   color: #333333;
   border: none;
 }
@@ -837,7 +837,7 @@ div.signout,
   border-radius: 0;
 }
 .fall_elements > a.another {
-  border-bottom: 1px solid #d1d0ce !important/*Этот селектор не перебивает селектор выше. Добавив специфичности в виде тегов, проблема не решится. Есть пояснение и обоснование, поэтому критерий не нарушен*/ ;
+  border-bottom: 1px solid #d1d0ce;
 }
 .sublist_visible:hover .fall_nav_main_header {
   display: block;
