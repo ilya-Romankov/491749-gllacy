@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -36,10 +37,13 @@
           <li class="elements_main_navigation_items"><a href="#">О Комании</a></li>
         </ul>
       </nav>
+
       <ul class="user_menu">
         <li>
           <div class="user_menu_search">
-            <a href="#" aria-label="Открыть форму поиска"></a>
+            <a  class="open_forms" href="#" aria-label="Открыть форму поиска">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+            </a>
             <div class="search">
               <form action="https://echo.htmlacademy.ru" method="POST">
                 <label class="visually-hidden" for="search_form">Что ищем?</label>
@@ -50,7 +54,10 @@
         </li>
         <li>
           <div class="user_menu_signout">
-            <a href="#" aria-label="Войти на сайт">Вход</a>
+            <a class="open_sign" href="#" aria-label="Войти на сайт">
+              Вход
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#ffffff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+            </a>
             <div class="signout">
               <div class="signout_wrapper">
               <form action="https://echo.htmlacademy.ru" method="POST">
@@ -92,7 +99,7 @@
       <div class="slider">
         <div class="slider_one">
           <h2 class="title_slider">Крем-брюле и пломбир с малиновым джемом</h2>
-          <a class="btn_and_link_style slider_link" href="#">Давайте оба</a>
+          <a class="btn_and_link_style slider_link" href="#">Давайте оба!</a>
         </div>
         <div class="slider_interactive">
           <button class="slider_btn slider_btn_one" type="button" name="one"></button>
@@ -103,12 +110,12 @@
       <section class="banners">
         <div class="banners_event">
           <h3 class="title_banners">Малинка даром!</h3>
-          <p class="discriptions_event">При покупке 2 кг любого фруктового, добавим в ваш заказ банку малинового варенья бесплатно</p>
+          <p class="discriptions_event">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="btn_and_link_style" href="#">Хочу варенье!</a>
         </div>
         <div class="banners_event">
           <h3 class="title_banners">Шоколадки даром!</h3>
-          <p class="discriptions_event">При покупке 2 кг пломбира, добавим в ваш заказ упаковку шоколадкой присыпки бесплатно бесплатно</p>
+          <p class="discriptions_event">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="btn_and_link_style" href="#">Хочу шоколадки!</a>
         </div>
       </section>
@@ -164,16 +171,16 @@
         <h1 class="title_about">Магазин Глэйси — это онлайн- и офлайн-магазин
           по продаже мороженного собсвтенного производства на развес</h1>
         <ul class="about_dicription">
-          <li>
+          <li class="about_dicription_ice">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий
           </li>
-          <li>
-            Для приготовления мороженного используются настоящие сливки и молоко и молоко высочайшего качества, Все дополнительные ингредеентыи добавки произведены из натурального экологически чистого сырья
+          <li class="about_dicription_cow">
+            Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество
           </li>
-          <li>
-            Закупка ингредиентов производится только у проверенных фермерсских хозйств и команий , с которыми нас связывает долговременное сотрудничество
+          <li class="about_dicription_sheet">
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
-          <li>
+          <li class="about_dicription_degree">
             Доставка нашего мороженного до заказчика осуществялется в специальном термопаке , который не даёт мороженому растатять в пути и позвоялет сохранить превосходный вкус
           </li>
         </ul>
@@ -254,7 +261,7 @@
         <label class="visually-hidden" for="email_modal_in">Почта для входа</label>
         <input type="email" id="email_modal_in" name="email" placeholder="Электронная почта">
       </p>
-      <!-- Взял часть формы из хедера. Это ничего страшного, т.к с какой формы будут отправляться данные можно будет настроить Get запромом -->
+
       <p class="comment">
         <label for="user_comment" class="visually-hidden">Ваш комментраий</label>
         <textarea name="user_comment" id="user_comment" rows="8" cols="80" placeholder="Напишите что-нибудь.."></textarea>
