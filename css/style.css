@@ -78,7 +78,7 @@ a {
   border-radius: 50%;
 }
 .title_slider {
-  font-size: 58px;
+  font-size: 60px;
   line-height: 60px;
   font-weight: bold;
 }
@@ -296,10 +296,7 @@ li.shop_card_item {
   box-sizing: border-box;
   padding: 0 13px 0 13px;
 }
-.shop_card_item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-}
+
 .shop_card_item > a {
   font-size: 18px;
   font-weight: bold;
@@ -379,8 +376,10 @@ li.shop_card_item {
   color: #5a5a5a;
 }
 .subscribe_forms input[type="email"] {
+  box-sizing: border-box;
   width: 368px;
-  height: 44px;
+  height: 40px;
+  padding-left: 15px;
   font-size: 16px;
   font-weight: bold;
   color: #323232;
@@ -444,11 +443,7 @@ li.shop_card_item {
   align-items: center;
 }
 
-.social {
-  width: 150px;
-  height: 30px;
-  background-color: white;
-}
+
 .other_information {
   list-style: none;
 }
@@ -676,7 +671,7 @@ a.active_switch_page {
   padding-top: 10px;
 }
 .index_main {
-  margin-top: 275px
+  padding-top: 275px;
 }
 .wrapper_header {
   display: flex;
@@ -717,7 +712,6 @@ a.active_switch_page {
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
-  background-position: 100% 100;
 }
 .banners_event .title_banners {
   margin: 0;
@@ -733,22 +727,33 @@ a.active_switch_page {
 
 }
 .best_items_shop {
-  position: relative;
+
   width: 100%;
-  min-height: 350px;
-  margin-bottom: 15px;
+
+  margin-bottom: 41px;
 }
 .best_items_shop ul{
-  position: absolute;
+  position: relative;
   left: -15px;
   padding: 0;
   margin: 0;
   display: flex;
 }
 li.shop_card_item {
-  padding-bottom: 75px;
   position: relative;
 }
+li.shop_card_item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -1px;
+  padding-bottom: 63px;
+}
+.shop_card_item:hover .shop_card_item::before {
+  background-color: red;
+}
+
 .visibli_part_shop_card {
   position: relative;
   padding-top: 5px;
@@ -773,7 +778,7 @@ li.shop_card_item {
   display: none;
   position: absolute;
   left: 50px;
-  bottom: 10px;
+  bottom: -60px;
   padding: 7px 11px 7px 11px;
   border-radius: 50px;
 }
@@ -856,6 +861,30 @@ li.shop_card_item {
 .title_article a {
   text-decoration: underline;
 }
+.subscribe {
+  box-sizing: border-box;
+}
+.sub_bg {
+  box-sizing: border-box;
+  margin: 5px 5px 5px 5px;
+  padding-bottom: 20px;
+}
+.subscribe_discriptions {
+  padding: 33px 21px 0 21px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+.subscribe_forms {
+  padding: 0 21px 0 21px;
+}
+.subscribe_forms form {
+  display: flex;
+}
+.btn_sub {
+  margin-left: 15px;
+  padding: 9px 17px 10px 17px;
+}
+
 
 .map_and_feedback {
   position: relative;
@@ -875,9 +904,38 @@ li.shop_card_item {
 
 .feedback {
   width: 302px;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-left: 27px;
+  padding-bottom: 40px;
   position: absolute;
-  top: -370px;
-  right: 40px;
+  top: -365px;
+  right: 10px;
+  border-radius: 10px;
+}
+.discriptions_feedback {
+  margin: 0;
+  padding-right: 127px;
+}
+.place_feedback {
+  margin: 0;
+  padding-right: 42px;
+}
+.discriptions_contacts {
+  margin: 0;
+  margin-top: 20px;
+}
+.contacts_map {
+  margin: 0;
+  margin-bottom: 35px;
+}
+.contacts_map a {
+  display: block;
+  text-align: left;
+}
+.feedback_link {
+  padding: 9px 27px 9px 29px;
+  border-radius: 20px;
 }
 
 .fall_nav_main_header,
@@ -1034,6 +1092,71 @@ li.shop_card_item {
 }
 .help_form_elemnts a {
   display: block;
+}
+
+.footer_wrapper {
+  padding-top: 10px;
+}
+.social {
+  display: flex;
+  margin: 0;
+  margin-top: 5px;
+}
+.social a {
+  display: block;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  border: 3px solid rgba(255,255,255, 0.2);
+
+  border-radius: 50%;
+}
+.social a:not(:first-child) {
+  margin-left: 10px;
+}
+.social_link path {
+  fill: rgba(255,255,255, 0.5);
+}
+.social_link:hover path {
+  fill: #ffffff;
+}
+
+
+.other_information {
+  width: 304px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.other_information_item a {
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.another_other {
+  position: relative;
+}
+.another_other::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  left: -18px;
+  top: 2px;
+  background-image: url('../img/heart.svg');
+}
+
+.creator  {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.creator a {
+ position: relative;
+ left: -7px;
 }
 
 
