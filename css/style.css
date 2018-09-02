@@ -777,7 +777,8 @@ li.shop_card_item:hover::before {
   margin-top: 5px;
 }
 .discription_part_shop_card a {
-  text-decoration: underline;
+
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 .shop_card_item >  a {
   display: none;
