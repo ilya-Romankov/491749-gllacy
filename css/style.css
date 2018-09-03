@@ -750,7 +750,7 @@ li.shop_card_item::before {
   display: none;
   width: 100%;
   height: calc(100% + 83px);
-  left: -1px;
+  left: 0;
 
 
 }
