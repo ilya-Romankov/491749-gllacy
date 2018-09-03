@@ -732,13 +732,13 @@ a.active_switch_page {
   margin-bottom: 41px;
 }
 .best_items_shop ul{
-  width: 1187px;
+  width: 1172px;
   position: relative;
   padding: 0;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 li.shop_card_item {
