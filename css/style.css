@@ -1171,9 +1171,9 @@ li.shop_card_item:hover::before {
   flex-direction: column;
   align-content: flex-start;
 }
-.creator a {
- position: relative;
- left: -7px;
+.logo_html_academy img {
+  position: relative;
+  left: -7px;
 }
 
 
