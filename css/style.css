@@ -676,8 +676,12 @@ a.active_switch_page {
   display: flex;
   flex-direction: column;
 }
+.information_job_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
 .information_job {
-  margin-left: auto;
+
   margin-top: -5px;
 }
 .information_job span ,
