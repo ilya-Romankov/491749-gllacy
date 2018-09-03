@@ -645,6 +645,7 @@ a.active_switch_page {
 /*Сеточные стили*/
 .slider {
   position: relative;
+  padding-top: 275px;
 }
 .slider_interactive {
   position: absolute;
@@ -670,9 +671,7 @@ a.active_switch_page {
 .main_header {
   padding-top: 10px;
 }
-.index_main {
-  padding-top: 275px;
-}
+
 .wrapper_header {
   display: flex;
   flex-direction: column;
@@ -733,11 +732,14 @@ a.active_switch_page {
   margin-bottom: 41px;
 }
 .best_items_shop ul{
+  width: 1187px;
   position: relative;
-  left: -15px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
 }
 li.shop_card_item {
   position: relative;
@@ -750,6 +752,7 @@ li.shop_card_item::before {
   height: 100%;
   left: -1px;
   padding-bottom: 63px;
+
 
 }
 li.shop_card_item:hover::before {
