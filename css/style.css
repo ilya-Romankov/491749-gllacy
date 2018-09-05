@@ -1031,9 +1031,14 @@ li.shop_card_item:hover::before {
   height: 19px;
   left: 15px;
   top: 5px;
+
+}
+.basket_no_active::before {
   background-image: url('../img/basket.svg');
 }
-
+.basket_activity::before {
+  background-image: url('../img/basket-active.svg');
+}
 .main_navigation_items li:first-child {
   position: relative;
 }
@@ -1176,7 +1181,101 @@ li.shop_card_item:hover::before {
   left: -10px;
 }
 
+.modal_task_feedback {
+  display: none;
+  position: fixed;
+  box-sizing: border-box;
+  width: 478px;
+  left: 50%;
+  top: 150px;
+  margin-left: -239px;
+  padding-left: 29px;
+  padding-bottom: 27px;
+  border-radius: 10px;
+}
+.modal_task_feedback .modal_close {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 30px;
+  top: 25px;
+  background-color: #ffffff;
+}
+.modal_task_feedback .modal_close::after,
+.modal_task_feedback .modal_close::before {
+  content: "";
+  width: 20px;
+  height: 2px;
 
+  position: absolute;
+  background-color: #323232;
+}
+.modal_task_feedback .modal_close::after {
+  transform: rotate(45deg);
+}
+.modal_task_feedback .modal_close::before {
+  transform: rotate(-45deg);
+}
+.modal_task_feedback h5 {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.modal_task_feedback p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.button_modal_done {
+  margin-left: 310px;
+  padding: 8px 18px 8px 18px;
+}
+.modal_task_feedback input, .modal_task_feedback textarea {
+  box-sizing: border-box;
+  padding: 16px 0 12px 14px;
+}
+
+li.active_nav {
+  background-color: #d07058;
+  color: #ffffff;
+}
+li.active_nav a {
+  border: none;
+}
+div.not_spide_landing {
+  justify-content: space-between;
+}
+ul.bread_crumb {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom:2px;
+  padding: 0;
+  margin-top: -20px;
+}
+.bread_crumb_item {
+  position: relative;
+  z-index: 1;
+}
+.fall_nav_main_header {
+  z-index: 2;
+}
+.bread_crumb_item:not(:first-child) {
+  margin-left: 20px;
+}
+.decor_crumb::before {
+  content: "»";
+  position: absolute;
+  right: -15px;
+}
+.bread_crumb_item:not(:last-child) {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.bread_crumb_item:not(:last-child) {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.title_catalog {
+  margin: 0;
+}
 .wrap_filter {
   display: flex;
   width: 853px;

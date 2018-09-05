@@ -11,45 +11,51 @@
 
 <body>
 
-    <header class="main_header">
-      <div class="wrapper_header wrap">
-        <div class="unity_elemnts_hight">
-      <a class="logo" href="index.html">
+  <header class="main_header">
+    <div class="wrapper_header wrap">
+      <div class="unity_elemnts_hight">
+      <a href="index.html" class="logo">
         <img class="logo_img" src="img/logo.svg" alt="Логотип магазина Глейси" width="154" height="64">
       </a>
       <nav class="main_navigation">
         <ul class="main_navigation_items">
-          <li>
-            <a href="#">Каталог</a>
+          <li class="sublist_visible active_nav elements_main_navigation_items ">
+            <a  href="#">Каталог</a>
             <ul class="fall_nav_main_header">
-              <li><a href="#">Новинки</a></li>
-              <li><a>Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лёд</a></li>
-              <li><a href="#">Мелорин</a></li>
+              <li class="fall_elements"><a class="another" href="#">Новинки</a></li>
+              <li class="fall_elements"><a href="catalog.html">Сливочное</a></li>
+              <li class="fall_elements"><a href="#">Щербеты</a></li>
+              <li class="fall_elements"><a href="#">Фруктовый лёд</a></li>
+              <li class="fall_elements"><a href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Комании</a></li>
+          <li class="elements_main_navigation_items"><a href="#">Доставка и оплата</a></li>
+          <li class="elements_main_navigation_items"><a href="#">О Компании</a></li>
         </ul>
       </nav>
+
       <ul class="user_menu">
         <li>
           <div class="user_menu_search">
-            <a href="#" aria-label="Открыть форму поиска"><img src="#" alt="Значок лупы">Картинка лупы</a>
+            <a  class="open_forms" href="#" aria-label="Открыть форму поиска">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+            </a>
             <div class="search">
               <form action="https://echo.htmlacademy.ru" method="POST">
                 <label class="visually-hidden" for="search_form">Что ищем?</label>
                 <input type="search" id="search_form" name="searching" placeholder="Что ищем?">
-                <button class="btn_and_link_style" type="submit" name="done_search" aria-label="Искать ваш запрос">Искать</button>
               </form>
             </div>
           </div>
         </li>
         <li>
           <div class="user_menu_signout">
-            <a href="#" aria-label="Войти на сайт">Вход</a>
+            <a class="open_sign" href="#" aria-label="Войти на сайт">
+              Вход
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#ffffff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+            </a>
             <div class="signout">
+              <div class="signout_wrapper">
               <form action="https://echo.htmlacademy.ru" method="POST">
                 <p class="email_user_header">
                   <label class="visually-hidden" for="email_in">Почта для входа</label>
@@ -59,18 +65,19 @@
                   <label class="visually-hidden" for="password_in">Пароль для входа</label>
                   <input type="password" id="password_in" name="password" placeholder="Пароль">
                 </p>
-                <button class="btn_and_link_style" type="submit" name="signout">Войти</button>
+                <button class="btn_and_link_style btn_signout_form" type="submit" name="signout">Войти</button>
               </form>
               <p class="help_form_elemnts">
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
               </p>
             </div>
+            </div>
           </div>
         </li>
         <li>
           <div class="user_menu_my_shop">
-            <a href="#" aria-label="Просмотреть выбранные товары">2 товара</a>
+            <a href="#" class="basket_activity" aria-label="Просмотреть выбранные товары">2 товара</a>
             <table class="basket">
               <tr>
                 <td class="img_basket_items_and_discription">
@@ -101,20 +108,25 @@
         </li>
       </ul>
     </div>
+    <div class="not_spide_landing information_job_wrapper">
+      <ul class="bread_crumb">
+        <li class="bread_crumb_item decor_crumb"><a href="index.html">Главная</a></li>
+        <li class="bread_crumb_item decor_crumb"><a href="#">Каталог</a></li>
+        <li class="bread_crumb_item"><a>Сливочное</a></li>
+      </ul>
       <div class="information_job">
         <span class="information_job_time">С 10 до 20, ежедневно</span>
         <a href="tel:88124502525" class="information_job_number">8 812 450-25-25</a>
       </div>
     </div>
-    </header>
+  </div>
+  </header>
+
+
+
 
     <main class="catalog_main">
       <div class="main_wrapper wrap">
-      <ul class="bread_crumb">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a>Сливочное</a></li>
-      </ul>
       <h1 class="title_catalog">Сливочное мороженое</h1>
       <section class="filter_shop">
         <form action="https://echo.htmlacademy.ru" method="POST">

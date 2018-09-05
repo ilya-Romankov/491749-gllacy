@@ -81,7 +81,7 @@
         </li>
         <li>
           <div class="user_menu_my_shop">
-            <a href="#" aria-label="Просмотреть выбранные товары">Пусто</a>
+            <a href="#" class="basket_no_active" aria-label="Просмотреть выбранные товары">Пусто</a>
           </div>
         </li>
       </ul>
@@ -265,7 +265,8 @@
       </p>
     </div>
   </footer>
-  <div class="modal_task_feedback">
+  <section class="modal_task_feedback">
+    <button class="modal_close" type="button" name="button"></button>
     <h5 class="tittle_modal">Мы обязательно вам ответим!</h5>
     <form action="https://echo.htmlacademy.ru" method="POST">
       <p class="name_users">
@@ -276,14 +277,13 @@
         <label class="visually-hidden" for="email_modal_in">Почта для входа</label>
         <input type="email" id="email_modal_in" name="email" placeholder="Электронная почта">
       </p>
-
       <p class="comment">
         <label for="user_comment" class="visually-hidden">Ваш комментраий</label>
         <textarea name="user_comment" id="user_comment" rows="8" cols="80" placeholder="Напишите что-нибудь.."></textarea>
       </p>
-      <button class="btn_and_link_style" type="submit" name="done_feedback">Отправить</button>
+      <button class="btn_and_link_style button_modal_done" type="submit" name="done_feedback">Отправить</button>
     </form>
-  </div>
+  </section>
 </div>
 </body>
 
