@@ -570,25 +570,56 @@ a.another_other {
   font-weight: 500;
   line-height: 18px;
   text-align: left;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.2);
+  color: #ffffff;
   border-radius: 20px;
 }
+.choose_sort option {
+  color: #323232;
+}
 
-.cost_ice_cream input[type="range"] {
-  -webkit-appearance: none;
+.bg-range {
+  box-sizing: border-box;
+  width: 229px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 20px;
+}
+.range-controls {
+  position: relative;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+.range-controls .scale {
+  box-sizing: border-box;
   width: 176px;
   height: 4px;
-  background-color: rgba(248, 247, 244, 0.5);
+  background: rgba(255, 255, 255, 0.3);
 }
-.cost_ice_cream input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 19px;
-    height: 19px;
-    background-color: rgb(255,255,255);
-    border-radius: 50%;
+.range-controls .bar {
+  width: 60%;
+  margin-left: 25px;
+  height: 4px;
+  background: #ffffff;
 }
-.bg-range {
-  background-color: rgba(255,255,255, 0.2);
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-toggle-min {
+  left: 5px;
+}
+
+.range-toggle-max {
+  left: 110px;
 }
 
 .disc_fatness {
@@ -1282,8 +1313,8 @@ ul.bread_crumb {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
+
 .popularity {
   width: 196px;
 }
@@ -1292,15 +1323,71 @@ ul.bread_crumb {
 }
 
 .fatness {
-  width: 415px;
+  width: 425px;
 }
+
 .fillers {
   width: 703px;
 }
 .character_row {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
+  padding-left:14px;
+  padding-right: 14px;
+  border-radius: 20px;
 }
+.label_radio {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+input[type="radio"] + .radio_indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 4px solid rgba(255,255,255,0.8);
+  border-radius: 20px;
+}
+input[type="radio"]:hover + .radio_indicator {
+  border-color: rgba(255,255,255,1);
+}
+input[type="radio"]:checked + .radio_indicator::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 50%;
+}
+input[type="radio"]:checked:hover + .radio_indicator::after {
+  background-color: #ffffff;
+}
+
+.label_check {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+input[type="checkbox"] + .checkbox_indicator {
+  position: absolute;
+
+  top: -3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url('../img/checkbox-off.svg');
+  background-repeat: no-repeat;
+}
+input[type="checkbox"]:checked + .checkbox_indicator {
+    background-image: url('../img/checkbox-on.svg');
+}
+
+
 .cards_catalog {
   padding: 0;
   margin: 0;
