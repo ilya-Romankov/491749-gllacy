@@ -132,7 +132,7 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <div class="wrap_filter">
           <p class="popularity">
-            <label for="sort" class="label_form_style">Сортировка:</label>
+            <label for="sort" class=" sort_move label_form_style">Сортировка:</label>
             <select class="choose_sort" id="sort" name="choose_sort">
               <option value="popularity">по популярности</option>
               <option value="low_cost">сначала недорогие</option>
@@ -141,8 +141,8 @@
             </select>
           </p>
           <div class="cost_ice_cream">
-              <label for="cost_range" class="label_form_style">Цена 100 руб - 500 руб</label>
-              <div class="bg-range">
+              <label for="cost_range" class="cost_move label_form_style">Цена 100 руб <sup>__</sup> 500 руб</label>
+              <div class="bg_range">
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar"></div>
@@ -158,7 +158,7 @@
             <p>
               <label class="low_fatness label_form_style label_radio">
                 0%
-                <input class="visually-hidden " type="radio" name="fatness" value="0">
+                <input class="visually-hidden " type="radio" name="fatness" value="0" checked>
                 <span class="radio_indicator"></span>
               </label>
             </p>
@@ -166,7 +166,7 @@
             <p>
               <label class="middle_fatness label_form_style label_radio">
                 до 10%
-                <input class="visually-hidden" type="radio" name="fatness" value="10">
+                <input class="visually-hidden" type="radio" name="fatness" value="10" checked>
                 <span class="radio_indicator"></span>
               </label>
             </p>
@@ -192,35 +192,35 @@
             <div class="bg_fillers character_row">
             <p>
               <label class="chocolate_fillers label_check label_form_style">
-                Шоколадные
-                <input class="visually-hidden" type="checkbox" name="fillers_chocolate" value="chocolate">
+                шоколадные
+                <input class="visually-hidden" type="checkbox" name="fillers_chocolate" value="chocolate" checked>
                 <span class="checkbox_indicator"></span>
               </label>
             </p>
             <p>
               <label class="sugar_fillers label_check label_form_style">
-                Схарные присыпки
-                <input class="visually-hidden" type="checkbox" name="fillers_sugar" value="sugar">
+                сахарные присыпки
+                <input class="visually-hidden" type="checkbox" name="fillers_sugar" value="sugar" checked>
                 <span class="checkbox_indicator"></span>
               </label>
             </p>
             <p>
               <label class="fruct_fillers label_check label_form_style">
-                Фрукты
+                фрукты
                 <input class="visually-hidden" type="checkbox" name="fillers_fruct" value="fruct">
                 <span class="checkbox_indicator"></span>
               </label>
             </p>
             <p>
               <label class="syrup_fillers label_check label_form_style">
-                Сиропы
+                сиропы
                 <input class="visually-hidden" type="checkbox" name="fillers_syrup" value="syrup">
                 <span class="checkbox_indicator"></span>
               </label>
             </p>
             <p>
               <label class="jam_fillers label_check label_form_style">
-                Джем
+                джемы
                 <input class="visually-hidden" type="checkbox" name="fillers_jam" value="jam">
                 <span class="checkbox_indicator"></span>
               </label>
@@ -231,9 +231,10 @@
           </div>
         </form>
       </section>
+    </div>
       <section class="catalog">
         <ul class="cards_catalog">
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/index-shop-card1.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -241,9 +242,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/index-shop-card2.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -251,9 +252,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/index-shop-card3.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -261,9 +262,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/index-shop-card4.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -271,9 +272,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/catalog-shop-card1.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -281,9 +282,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/catalog-shop-card2.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -291,9 +292,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/catalog-shop-card3.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -301,9 +302,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/catalog-shop-card4.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -311,9 +312,10 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
+
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/catalog-shop-card5.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -321,9 +323,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/catalog-shop-card6.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -331,9 +333,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/catalog-shop-card7.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -341,9 +343,9 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
-          <li class="shop_card_item">
+          <li class="shop_card_item place_bottom_cards">
             <div class="visibli_part_shop_card">
               <img src="img/catalog-shop-card8.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310р/<span>кг</span></span>
@@ -351,40 +353,57 @@
             <h4 class="discription_part_shop_card">
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h4>
-            <a href="#">Быстрый просмотр</a>
+            <a  class="btn_and_link_style" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
-      <ul class="switch_page">
-        <li><a class="active_switch_page" href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-      </ul>
+      <div class="main_wrapper wrap switch_wrapps">
+
+        <ul class="switch_page">
+          <li class="switch_manager back"><a class="link_nav_pages" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+          </a></li>
+          <li><a class="active_switch_page" href="#">1</a></li>
+          <li><a class="style_active_switch" href="#">2</a></li>
+          <li><a class="style_active_switch" href="#">3</a></li>
+          <li><a class="style_active_switch" href="#">4</a></li>
+          <li><a class="style_active_switch" href="#">5</a></li>
+          <li class="switch_manager next"><a class="link_nav_pages" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+          </a></li>
+        </ul>
     </div>
+    <hr class="decor_line">
     </main>
     <footer class="main_footer">
       <div class="footer_wrapper wrap">
-      <p class="social">
-        <a href="#" class="social_link twit" aria-label="Смотрите нас в твитере"><span class="visually-hidden">Смотрите нас в твиттере</span></a>
-        <a href="#" class="social_link inst" aria-label="Смотрите нас в инстаграмме"><span class="visually-hidden">Смотрите нас в инстаграмме</span></a>
-        <a href="#" class="social_link face" aria-label="Смотрите нас в фейсбуке"><span class="visually-hidden">Смотрите нас в фейсбуке</span></a>
-        <a href="#" class="social_link vk" aria-label="Смотрите нас в вк"><span class="visually-hidden">Смотрите нас в Вконтакте</span></a>
-      </p>
-      <ul class="other_information">
-        <li><a class="another_other" href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандырты</a></li>
-      </ul>
-      <p class="creator">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy-small.svg" alt="Логотип академии" class="creator_logo" width="108" height="39">
-        </a>
-        <span class="creator_discriptions">Сдалено в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
-      </p>
-    </div>
+        <p class="social">
+          <a href="#" class="social_link twit" aria-label="Смотрите нас в твитере"><span class="visually-hidden">Смотрите нас в твиттере</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#FFF" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg>
+          </a>
+          <a href="#" class="social_link inst" aria-label="Смотрите нас в инстаграмме"><span class="visually-hidden">Смотрите нас в инстаграмме</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="#FFF"><path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/><path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/></g></svg>
+          </a>
+          <a href="#" class="social_link face" aria-label="Смотрите нас в фейсбуке"><span class="visually-hidden">Смотрите нас в фейсбуке</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/></svg>
+          </a>
+          <a href="#" class="social_link vk" aria-label="Смотрите нас в вк"><span class="visually-hidden">Смотрите нас в Вконтакте</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="#FFF"><path d="M16.637 14.495c.402-.019.719-.082.951-.188.326-.145.54-.33.641-.559.101-.229.15-.496.15-.797 0-.232-.058-.465-.174-.697-.116-.232-.322-.405-.617-.517-.264-.1-.592-.155-.984-.165a76.242 76.242 0 0 0-1.652-.014h-.339v2.965h.565c.571 0 1.057-.009 1.459-.028zM18.118 17.084c-.282-.081-.672-.125-1.166-.132a127.97 127.97 0 0 0-1.55-.009h-.79v3.493h.264c1.014 0 1.74-.003 2.18-.009a3.2 3.2 0 0 0 1.212-.245c.377-.157.633-.364.774-.625s.214-.562.214-.9c0-.446-.088-.788-.261-1.03-.17-.241-.464-.423-.877-.543z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm6.602 20.531a3.73 3.73 0 0 1-1.124 1.327c-.552.415-1.161.71-1.823.886s-1.501.264-2.519.264h-6.121V8.987h5.443c1.13 0 1.957.038 2.48.113a5.126 5.126 0 0 1 1.561.5c.533.27.929.632 1.189 1.087.26.455.392.975.392 1.558 0 .678-.179 1.278-.536 1.795-.358.518-.863.92-1.517 1.208v.075c.917.182 1.642.559 2.179 1.13.537.571.807 1.325.807 2.261 0 .678-.138 1.283-.411 1.817z"/></g></svg>
+          </a>
+        </p>
+        <ul class="other_information">
+          <li class="other_information_item"><a class="another_other" href="#">Для поставщиков</a></li>
+          <li class="other_information_item"><a href="#">Наши документы</a></li>
+          <li class="other_information_item"><a href="#">О производстве</a></li>
+          <li class="other_information_item"><a href="#">Экологические стандарты</a></li>
+        </ul>
+        <p class="creator">
+          <a class="logo_html_academy" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy-small.svg" alt="Логотип академии" class="creator_logo" width="130" height="39">
+          </a>
+          <span class="creator_discriptions">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</span>
+        </p>
+      </div>
     </footer>
 
 </body>
