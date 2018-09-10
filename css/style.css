@@ -1059,7 +1059,9 @@ li.shop_card_item:hover::before {
 .open_sign:hover path {
   fill: #323232;
 }
-
+.user_menu_my_shop {
+  position: relative;
+}
 .user_menu_my_shop > a {
   display: block;
   position: relative;
@@ -1228,7 +1230,7 @@ li.shop_card_item:hover::before {
   display: none;
   position: fixed;
   box-sizing: border-box;
-  width: 478px;
+  width: 488px;
   left: 50%;
   top: 150px;
   margin-left: -239px;
@@ -1401,12 +1403,15 @@ input[type="radio"] + .radio_indicator {
   height: 22px;
   background: url('../img/radio-off.svg') no-repeat ;
 }
-input[type="radio"]:hover + .radio_indicator {
-  border-color: rgba(255,255,255,1);
-}
+
 input[type="radio"]:checked + .radio_indicator {
   background: url('../img/radio-on.svg') no-repeat ;
-
+}
+input[type="radio"]:disabled + .radio_indicator {
+  opacity: 0.8;
+}
+.bg_fatness > p:hover {
+  opacity: 0.8;
 }
 
 
@@ -1427,7 +1432,12 @@ input[type="checkbox"] + .checkbox_indicator {
 input[type="checkbox"]:checked + .checkbox_indicator {
     background: url('../img/checkbox-on.svg') no-repeat;
 }
-
+input[type="checkbox"]:disabled + .checkbox_indicator {
+    opacity: 0.8;
+}
+.bg_fillers > p:hover {
+  opacity: 0.8;
+}
 
 .cards_catalog {
   padding: 0;
@@ -1466,8 +1476,7 @@ input[type="checkbox"]:checked + .checkbox_indicator {
 .switch_manager {
   position: absolute;
 }
-.link_nav_pages:active path,
-.link_nav_pages:hover path {
+.on_switch path {
   fill:#ffffff;
 }
 
@@ -1478,8 +1487,6 @@ input[type="checkbox"]:checked + .checkbox_indicator {
 .next {
   right: -15px;
 }
-
-
 .decor_line {
   display: block;
   border: none;
@@ -1487,5 +1494,77 @@ input[type="checkbox"]:checked + .checkbox_indicator {
   height: 1px;
   margin: 0 auto;
   background-color: rgba(255,255,255,0.2);
+}
 
+.basket {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  display: block;
+  width: 516px;
+  table-layout: fixed;
+  padding-top: 20px;
+  padding-left: 16px;
+  z-index: 3;
+}
+.basket .product_basket {
+  margin-bottom: 20px;
+}
+.product_basket td {
+  padding-bottom: 10px;
+}
+.discription_basket {
+  width: 310px;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+.kg_ice_cream,.cost_basket_item {
+    vertical-align: top;
+}
+.basket_all_cost {
+  border-top: 1px solid  #cacac7;
+}
+.basket_all_cost {
+  padding-top: 10px;
+  text-align: right;
+}
+.final_basket {
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.final_basket a {
+  padding: 7px 8px 7px 8px;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height:24px;
+  font-weight: bold;
+}
+.reset_order button {
+  position: relative;
+  background-color: transparent;
+  top: -5px;
+  left: -5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.reset_order button::after,
+.reset_order button::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: #999999;
+}
+
+.reset_order button::after {
+  transform: rotate(45deg);
+  top: 5px;
+  left: 0px;
+
+}
+.reset_order button::before {
+  transform: rotate(-45deg);
+  top: 5px;
+  left: 0px;
 }

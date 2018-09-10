@@ -79,30 +79,37 @@
           <div class="user_menu_my_shop">
             <a href="#" class="basket_activity" aria-label="Просмотреть выбранные товары">2 товара</a>
             <table class="basket">
-              <tr>
-                <td class="img_basket_items_and_discription">
-                  <img src="img/index-shop-card1.jpg" alt="Изображение мороженого" width="33" height="33"> Пломбир с апельсиновым джемом
+
+              <tr class="product_basket">
+                <td class="reset_order"><button type="button"></button></td>
+                <td class="img_basket_items"><img src="img/index-shop-card1.jpg" alt="Изображение мороженого" width="33" height="33"></td>
+                <td class="discription_basket">
+                 Пломбир с апельсиновым джемом
                 </td>
-                <td>1,5кг * <span class="decor_basket_cost">200</span></td>
+                <td class="kg_ice_cream">1,5кг * <span class="decor_basket_cost">200</span></td>
+                <td class="cost_basket_item">300 руб</td>
+              </tr>
+              <tr class="product_basket">
+                <td class="reset_order"><button type="button"></button></td>
+                <td class="img_basket_items"><img src="img/index-shop-card2.jpg" alt="Изображение мороженого" width="33" height="33"></td>
+                <td class="discription_basket">
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </td>
+                <td class="kg_ice_cream">1,5кг * <span class="decor_basket_cost">200</span></td>
                 <td class="cost_basket_item">300 руб</td>
               </tr>
               <tr>
-                <td class="img_basket_items_and_discription">
-                  <img src="img/index-shop-card2.jpg" alt="Изображение мороженого" width="33" height="33"> Клубничный пломбир с присыпкой из белого шоколада
-                </td>
-                <td>1,5кг * <span class="decor_basket_cost">300</span></td>
-                <td class="cost_basket_item">450 руб</td>
-              </tr>
-              <tr>
-                <td class="basket_all_cost" colspan="3">
+                <td class="basket_all_cost" colspan="5">
                   Итого: 750 руб
                 </td>
               </tr>
               <tr>
-                <td class="final_basket" colspan="3">
+
+                <td class="final_basket" colspan="5">
                   <a class="btn_and_link_style" href="#">Оформить заказ</a>
                 </td>
               </tr>
+
             </table>
           </div>
         </li>
@@ -141,7 +148,7 @@
             </select>
           </p>
           <div class="cost_ice_cream">
-              <label for="cost_range" class="cost_move label_form_style">Цена 100 руб <sup>__</sup> 500 руб</label>
+              <label  class="cost_move label_form_style">Цена 100 руб - 500 руб</label>
               <div class="bg_range">
                 <div class="range-controls">
                   <div class="scale">
@@ -181,7 +188,7 @@
             <p>
               <label class="over_fatness label_form_style label_radio">
                 выше 30%
-                <input class="visually-hidden" type="radio" name="fatness" value="30+">
+                <input class="visually-hidden" type="radio" name="fatness" value="30+" disabled>
                 <span class="radio_indicator"></span>
               </label>
             </p>
@@ -221,7 +228,7 @@
             <p>
               <label class="jam_fillers label_check label_form_style">
                 джемы
-                <input class="visually-hidden" type="checkbox" name="fillers_jam" value="jam">
+                <input class="visually-hidden" type="checkbox" name="fillers_jam" value="jam" disabled>
                 <span class="checkbox_indicator"></span>
               </label>
             </p>
@@ -368,7 +375,7 @@
           <li><a class="style_active_switch" href="#">3</a></li>
           <li><a class="style_active_switch" href="#">4</a></li>
           <li><a class="style_active_switch" href="#">5</a></li>
-          <li class="switch_manager next"><a class="link_nav_pages" href="#">
+          <li class="switch_manager next "><a class="link_nav_pages on_switch" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
           </a></li>
         </ul>
