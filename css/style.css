@@ -1507,6 +1507,9 @@ input[type="checkbox"]:disabled + .checkbox_indicator {
   padding-left: 16px;
   z-index: 3;
 }
+.img_basket_items img {
+  border-radius: 50%;
+}
 .basket .product_basket {
   margin-bottom: 20px;
 }
