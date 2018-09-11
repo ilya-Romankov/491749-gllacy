@@ -19,7 +19,7 @@ body {
 .light_bg {
   background-image: linear-gradient(to bottom , rgba(255,255,255,0.2), transparent);
   background-repeat: no-repeat;
-  background-size: auto 500px;
+  background-size: auto 200px;
   background-position: 50% 0;
 }
 
@@ -622,7 +622,7 @@ a.another_other {
   cursor: pointer;
 }
 .range-toggle-min {
-  left: 5px;
+  left: 14px;
 }
 
 .range-toggle-max {
@@ -641,8 +641,13 @@ a.another_other {
 .bg_fillers {
   background-color: rgba(255,255,255, 0.2);
 }
+.bg_fillers .label_form_style,
+.bg_fatness .label_form_style{
+  font-size: 16px;
+  line-height: 18px;
+}
 .filter_shop {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 .filter_shop button {
   position: relative;
@@ -1352,7 +1357,7 @@ ul.bread_crumb {
   appearance: none;
   background-image: url('../img/select-arrow.svg');
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 93% 48%;
 }
 .choose_sort:focus {
   background-color: #ffffff;
@@ -1402,8 +1407,8 @@ p.disc_fillers {
   border-radius: 20px;
 }
 .bg_fillers {
-  padding-left: 18px;
-  padding-right: 20px;
+  padding-left: 13px;
+  padding-right: 15px;
 }
 .label_radio {
   position: relative;
@@ -1474,6 +1479,7 @@ input[type="checkbox"]:disabled + .checkbox_indicator {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 15px;
+  padding-top: 3px;
 
 }
 .switch_page {
