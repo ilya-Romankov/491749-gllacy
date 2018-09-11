@@ -16,6 +16,12 @@ body {
   background: url('../img/ice-cream-bg1.png') no-repeat 50% 0;
 
 }
+.light_bg {
+  background-image: linear-gradient(to bottom , rgba(255,255,255,0.2), transparent);
+  background-repeat: no-repeat;
+  background-size: auto 500px;
+  background-position: 50% 0;
+}
 
 
 
@@ -636,7 +642,7 @@ a.another_other {
   background-color: rgba(255,255,255, 0.2);
 }
 .filter_shop {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .filter_shop button {
   position: relative;
@@ -1078,6 +1084,10 @@ li.shop_card_item:hover::before {
   top: 5px;
 
 }
+a.basket_activity {
+  background-color: #ffffff;
+  color: #323232;
+}
 .basket_no_active::before {
   background-image: url('../img/basket.svg');
 }
@@ -1377,6 +1387,7 @@ p.disc_fillers {
 .fillers {
   width: 703px;
 }
+
 .character_row > p {
   margin: 10px 0 10px 0;
 }
@@ -1389,6 +1400,10 @@ p.disc_fillers {
   padding-left:14px;
   padding-right: 20px;
   border-radius: 20px;
+}
+.bg_fillers {
+  padding-left: 18px;
+  padding-right: 20px;
 }
 .label_radio {
   position: relative;
@@ -1417,7 +1432,7 @@ input[type="radio"]:disabled + .radio_indicator {
 
 .label_check {
   position: relative;
-  padding-left: 30px;
+  padding-left: 38px;
   cursor: pointer;
 }
 input[type="checkbox"] + .checkbox_indicator {
@@ -1509,6 +1524,10 @@ input[type="checkbox"]:disabled + .checkbox_indicator {
 }
 .img_basket_items img {
   border-radius: 50%;
+  vertical-align: top;
+}
+.discription_basket,.kg_ice_cream,.cost_basket_item {
+  padding-top: 10px;
 }
 .basket .product_basket {
   margin-bottom: 20px;
@@ -1518,7 +1537,7 @@ input[type="checkbox"]:disabled + .checkbox_indicator {
 }
 .discription_basket {
   width: 310px;
-  vertical-align: middle;
+  vertical-align: top;
   padding-left: 10px;
 }
 .kg_ice_cream,.cost_basket_item {
