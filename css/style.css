@@ -9,12 +9,25 @@ body {
   font-weight: bold;
   color: #ffffff;
 
-  background-color: #849d8f;
-
 }
-.bg_ice_cream {
-  background: url('../img/ice-cream-bg1.png') no-repeat 50% 0;
 
+.bg_slider_back_one {
+  background-color: #849d8f;
+}
+.bg_slider_back_two {
+  background-color: #8996a6;
+}
+.bg_slider_back_three {
+  background-color: #9d8b84;
+}
+.bg_ice_cream_one {
+  background: url('../img/ice-cream-bg1.png') no-repeat 50% 0;
+}
+.bg_ice_cream_two {
+  background: url('../img/ice-cream-bg2.png') no-repeat 50% 0;
+}
+.bg_ice_cream_three {
+  background: url('../img/ice-cream-bg3.png') no-repeat 50% 0;
 }
 .light_bg {
   background-image: linear-gradient(to bottom , rgba(255,255,255,0.2), transparent);
@@ -28,6 +41,19 @@ body {
 a {
   text-decoration: none;
 }
+
+.overlay::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.8);
+  z-index: 30;
+}
+
 .name_users input[type="text"]::placeholder,
 .email_user input[type="email"]::placeholder,
 .email_user_header input[type="email"]::placeholder,
@@ -98,7 +124,10 @@ a {
 .slider_btn:hover {
   background-color: rgba(248, 247, 244, 0.4);
 }
-.slider_btn:active,.slider_btn:focus {
+.slider_btn:focus {
+  background-color: #ffffff;
+}
+.slider_btn_active_now {
   background-color: #ffffff;
 }
 
@@ -126,6 +155,7 @@ a {
   color: #333333;
   border: none;
 }
+
 .main_navigation_items > li:active {
   background-color: #ededed;
   box-shadow: inset 0px 2px 1px 0 #696969;
@@ -954,13 +984,27 @@ li.shop_card_item:hover::before {
 
 
 .map_and_feedback {
+
+}
+.map_wrapper {
   position: relative;
+  height: 430px;
 }
 .map_wrapper img {
+  position: absolute;
   display: block;
+  left: 50%;
+  top: 600px;
   width: 1200px;
-  margin: 0 auto;
+  margin: -600px;
+  z-index: 1;
 }
+.map_wrapper iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
 
 
 .feedback_wrapper {
@@ -979,6 +1023,7 @@ li.shop_card_item:hover::before {
   top: -365px;
   right: 10px;
   border-radius: 10px;
+  z-index: 4;
 }
 .discriptions_feedback {
   margin: 0;
@@ -1118,6 +1163,7 @@ a.basket_activity {
 .fall_elements > a.another {
   border-bottom: 1px solid #d1d0ce;
 }
+
 .sublist_visible:hover .fall_nav_main_header {
   display: block;
 }
@@ -1244,6 +1290,7 @@ a.basket_activity {
 .modal_task_feedback {
   display: none;
   position: fixed;
+  z-index: 40;
   box-sizing: border-box;
   width: 488px;
   left: 50%;
@@ -1253,11 +1300,14 @@ a.basket_activity {
   padding-bottom: 27px;
   border-radius: 10px;
 }
+.modal_task_feedback_show {
+  display: block;
+}
 .modal_task_feedback .modal_close {
   position: absolute;
   width: 10px;
   height: 10px;
-  right: 30px;
+  right: 25px;
   top: 25px;
   background-color: #ffffff;
 }
@@ -1266,7 +1316,7 @@ a.basket_activity {
   content: "";
   width: 20px;
   height: 2px;
-
+  left: -5px;
   position: absolute;
   background-color: #323232;
 }
@@ -1521,13 +1571,17 @@ input[type="checkbox"]:disabled + .checkbox_indicator {
   position: absolute;
   right: 0;
   top: 35px;
-  display: block;
+  display: none;
   width: 516px;
   table-layout: fixed;
   padding-top: 20px;
   padding-left: 16px;
   z-index: 3;
 }
+.user_menu_my_shop:hover .basket {
+  display: block;
+}
+
 .img_basket_items img {
   border-radius: 50%;
   vertical-align: top;
