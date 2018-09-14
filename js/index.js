@@ -72,12 +72,15 @@ var overlay = document.querySelector('body');
 var feedback_link = document.querySelector('.feedback_link');
 var modal_open = document.querySelector('.modal_task_feedback');
 var close_feedback = document.querySelector('.modal_close');
-
-
+var login_modal = document.querySelector('#name_user');
+var mail_modal = modal_open.querySelector('[name=email]');
+var textarea_modal = modal_open.querySelector('textarea');
+var form = modal_open.querySelector('form');
 feedback_link.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal_open.classList.add("modal_task_feedback_show");
   overlay.classList.add("overlay");
+  login_modal.focus();
 });
 
 
@@ -85,4 +88,17 @@ close_feedback.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal_open.classList.remove("modal_task_feedback_show");
   overlay.classList.remove("overlay");
+  modal_open.classList.remove('modal_error');
+});
+
+form.addEventListener("submit", function (evt) {
+  if (!mail_modal.value || login_modal.value || textarea_modal.value) {
+    evt.preventDefault();
+    modal_open.classList.add('modal_error');
+    /*setInterval(function(){
+      modal_open.classList.remove('modal_error');
+    },3000);*/
+    console.log('Error: no value form');
+  }
+
 });
