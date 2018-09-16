@@ -176,10 +176,10 @@ a {
 a.another {
   font-weight: bold;
 }
-.fall_nav_main_header a:hover {
+.fall_nav_main_header li:hover {
    background-color: #fbded7;
 }
-.fall_nav_main_header a:active {
+.fall_nav_main_header li:active {
   background-color: #f6b5a5;
   box-shadow: none;
 }
@@ -191,7 +191,9 @@ a.another {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .search input[type="search"] {
-  width: 311px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  width: 310px;
   height: 44px;
   font-size: 16px;
   font-weight: bold;
@@ -225,6 +227,8 @@ a.another {
 }
 
 p.email_user_header input[type="email"] {
+  box-sizing: border-box;
+  padding-left: 15px;
   width: 241px;
   height: 44px;
   font-size: 16px;
@@ -235,7 +239,13 @@ p.email_user_header input[type="email"] {
   border: solid 1px #d3d3d2;
   border-radius: 5px;
 }
+
+p.email_user_header {
+  margin-bottom: 20px;
+}
 p.password_users_header input[type="password"] {
+  box-sizing: border-box;
+  padding-left: 15px;
   width: 241px;
   height: 44px;
   font-size: 16px;
@@ -245,6 +255,9 @@ p.password_users_header input[type="password"] {
   background-color: #ffffff;
   border: solid 1px #d3d3d2;
   border-radius: 5px;
+}
+p.password_users_header {
+  margin-bottom: 23px;
 }
 
 .help_form_elemnts a {
@@ -1149,20 +1162,22 @@ a.basket_activity {
 }
 .fall_nav_main_header  {
   position: absolute;
-  z-index: 1;
+  padding-top: 6px;
   padding: 0;
   top: 37px;
-  right:-25px;
+  right:-44px;
   border-radius: 5px;
 }
 .fall_elements > a {
   display: block;
-  width: 102px;
-  padding: 9px 20px 9px 21px;
+  width: 105px;
+  padding: 9px 17px 9px 16px;
   border-radius: 0;
 }
 .fall_elements > a.another {
   border-bottom: 1px solid #d1d0ce;
+    padding-top: 10px;
+    padding-bottom: 12px;
 }
 
 .sublist_visible:hover .fall_nav_main_header {
@@ -1173,11 +1188,12 @@ a.basket_activity {
   position: relative;
 }
 .search {
+  box-sizing: border-box;
   position: absolute;
   z-index: 1;
-  padding: 20px 15px 20px 15px;
-  right:  -10px;
-  top:37px;
+  padding: 20px 15px 20px 16px;
+  right:  -4px;
+  top:35px;
   background-color: #ffffff;
   border-radius: 5px;
 }
@@ -1193,11 +1209,11 @@ a.basket_activity {
 .signout {
   position: absolute;
   z-index: 1;
-  right: 0px;
+  right: -4px;
   top:35px;
   background-color: #ffffff;
   display: none;
-  padding: 0px 20px 20px 20px;
+  padding: 4px 14px 20px 20px;
   flex-wrap: wrap;
   border-radius: 5px;
 }
@@ -1209,12 +1225,12 @@ a.basket_activity {
 }
 .btn_signout_form {
   display: inline-block;
-  padding: 8px 19px 8px 19px;
+  padding: 10px 26px 10px 22px;
 }
 
 .help_form_elemnts {
   position: absolute;
-  right: 10px;
+  right: 4px;
   bottom: -15px;
 }
 .help_form_elemnts a {
@@ -1599,7 +1615,8 @@ input[type="checkbox"]:disabled ~ .disabled_label_form {
   width: 516px;
   table-layout: fixed;
   padding-top: 20px;
-  padding-left: 16px;
+  padding-left: 20px;
+  padding-bottom: 10px;
   z-index: 3;
 }
 .user_menu_my_shop:hover .basket {
@@ -1611,27 +1628,35 @@ input[type="checkbox"]:disabled ~ .disabled_label_form {
   vertical-align: top;
 }
 .discription_basket,.kg_ice_cream,.cost_basket_item {
-  padding-top: 10px;
+  padding-top: 9px;
 }
-.basket .product_basket {
-  margin-bottom: 20px;
-}
+
 .product_basket td {
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
+
+
 .discription_basket {
-  width: 310px;
+  width: 230px;
   vertical-align: top;
   padding-left: 10px;
 }
 .kg_ice_cream,.cost_basket_item {
     vertical-align: top;
 }
+.kg_ice_cream {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 40px;
+}
+.cost_basket_item {
+  padding-right: 20px;
+}
 .basket_all_cost {
   border-top: 1px solid  #cacac7;
 }
 .basket_all_cost {
-  padding-top: 10px;
+  padding-top: 15px;
   text-align: right;
 }
 .final_basket {
@@ -1640,7 +1665,7 @@ input[type="checkbox"]:disabled ~ .disabled_label_form {
   padding-bottom: 20px;
 }
 .final_basket a {
-  padding: 7px 8px 7px 8px;
+  padding: 9px 15px 9px 15px;
   border-radius: 20px;
   font-size: 18px;
   line-height:24px;
@@ -1665,12 +1690,12 @@ input[type="checkbox"]:disabled ~ .disabled_label_form {
 
 .reset_order button::after {
   transform: rotate(45deg);
-  top: 5px;
-  left: 0px;
+  top: 2px;
+  left: -6px;
 
 }
 .reset_order button::before {
   transform: rotate(-45deg);
-  top: 5px;
-  left: 0px;
+  top: 2px;
+  left: -6px;
 }
