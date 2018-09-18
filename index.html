@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/stylemin.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 
@@ -133,9 +133,10 @@
 
       <section class="best_items_shop">
         <ul class="shop_cards">
+
           <li class="shop_card_item">
             <div class="visibli_part_shop_card">
-              <img class="mark_best" src="img/hit.svg" alt="" width="61" height="61">
+              <img class="mark_best" src="img/hit.svg" alt="Хит среди покупателей" width="61" height="61">
               <img src="img/index-shop-card1.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">310₽/<span>кг</span></span>
             </div>
@@ -146,7 +147,7 @@
           </li>
           <li class="shop_card_item">
             <div class="visibli_part_shop_card">
-              <img class="mark_best" src="img/hit.svg" alt="" width="61" height="61">
+              <img class="mark_best" src="img/hit.svg" alt="Хит среди покупателей" width="61" height="61">
               <img src="img/index-shop-card2.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">380₽/<span>кг</span></span>
             </div>
@@ -157,7 +158,7 @@
           </li>
           <li class="shop_card_item">
             <div class="visibli_part_shop_card">
-              <img class="mark_best" src="img/hit.svg" alt="" width="61" height="61">
+              <img class="mark_best" src="img/hit.svg" alt="Хит среди покупателей" width="61" height="61">
               <img src="img/index-shop-card3.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">355₽/<span>кг</span></span>
             </div>
@@ -168,7 +169,7 @@
           </li>
           <li class="shop_card_item">
             <div class="visibli_part_shop_card">
-              <img class="mark_best" src="img/hit.svg" alt="" width="61" height="61">
+              <img class="mark_best" src="img/hit.svg" alt="Хит среди покупателей" width="61" height="61">
               <img src="img/index-shop-card4.jpg" alt="Картинка мороженного" width="267" height="267">
               <span class="cost">415₽/<span>кг</span></span>
             </div>
@@ -183,7 +184,7 @@
       <div class="main_wrapper wrap">
         <section class="about">
           <h1 class="title_about">Магазин Глэйси — это онлайн- и офлайн-магазин
-          по продаже мороженного собсвтенного производства на развес</h1>
+          по продаже мороженного собственного производства на развес</h1>
           <ul class="about_dicription">
             <li class="about_dicription_ice">
               Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий
@@ -216,8 +217,8 @@
                   <p>
                     <label class="visually-hidden" for="sub">Ваш email</label>
                     <input type="email" name="sub" id="sub" placeholder="Электронная почта">
-                    <p>
-                      <button class="btn_and_link_style btn_sub" type="submit" name="sub_done">Отправить</button>
+                  <p>
+                  <button class="btn_and_link_style btn_sub" type="submit" name="sub_done">Отправить</button>
                 </form>
               </div>
             </div>
@@ -227,7 +228,7 @@
       <section class="map_and_feedback">
         <div class="map_wrapper">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5953794558852!2d30.321431057713315!3d59.938855986736115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1536758010525"
-            width="100%" height="430" allowfullscreen></iframe>
+            width="1200" height="430" allowfullscreen></iframe>
           <img src="img/map.png" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
         </div>
         <div class="feedback_wrapper">
@@ -239,7 +240,7 @@
               <a href="tel:88124502525">8 812 450-25-25</a>
               <span>(с 10 до 20 ежедневно)</span>
             </p>
-            <a href="#" class="btn_and_link_style feedback_link">Форма обратной связи</a>
+            <a href="#" class="btn_and_link_style feedback_link" aria-label="обратиться к нам через спец форму">Форма обратной связи</a>
           </div>
         </div>
       </section>
@@ -275,7 +276,7 @@
       </div>
     </footer>
     <section class="modal_task_feedback">
-      <button class="modal_close" type="button" name="button"></button>
+      <button class="modal_close" type="button" name="button" aria-label="закрыть форму обратной связи"></button>
       <h5 class="tittle_modal">Мы обязательно вам ответим!</h5>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <p class="name_users">

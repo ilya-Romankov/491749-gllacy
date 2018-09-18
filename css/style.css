@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Arial', sans-serif;
@@ -33,6 +34,7 @@ body {
 }
 
 .light_bg {
+  width: 100%;
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), transparent);
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), transparent);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
@@ -368,12 +370,16 @@ p.password_users_header {
 
 .banners_event:first-child {
   border-radius: 15px;
+  background-color:#ac052c ;
   background-image: url('../img/raspberry.png');
+  background-size:100% 100%;
 }
 
-.banners_event:last-child {
+.banners_event:nth-child(2) {
   border-radius: 15px;
+  background-color:#472513;
   background-image: url('../img/chocolate.png');
+  background-size:100% 100%;
 }
 
 .title_banners {
@@ -438,6 +444,8 @@ li.shop_card_item {
 }
 
 .discription_part_shop_card a {
+  position: relative;
+  z-index: 5;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
@@ -445,7 +453,7 @@ li.shop_card_item {
 }
 
 .about {
-  background: url('../img/waffle.png');
+  background: #e6d8b7 url('../img/waffle.png');
 }
 
 .title_about {
@@ -571,6 +579,13 @@ li.shop_card_item {
   line-height: 24px;
   color: #fefefe;
 }
+.discription_part_shop_card:hover a,
+.discription_part_shop_card:active a,
+.other_information_item:hover a,
+.other_information_item:active a {
+  cursor: pointer;
+  color:#e84d37;
+}
 
 .footer_wrapper {
   display: -webkit-box;
@@ -633,6 +648,8 @@ a.another_other {
 }
 
 .name_users input[type="text"] {
+  box-sizing: border-box;
+  padding-bottom: 18px;
   width: 267px;
   height: 44px;
   background-color: #ffffff;
@@ -645,6 +662,8 @@ a.another_other {
 }
 
 .email_user input[type="email"] {
+  box-sizing: border-box;
+  padding-bottom: 18px;
   width: 267px;
   height: 44px;
   background-color: #ffffff;
@@ -657,6 +676,8 @@ a.another_other {
 }
 
 .comment textarea {
+  box-sizing: border-box;
+  padding-bottom: 5px;
   width: 428px;
   height: 155px;
   font-size: 16px;
@@ -722,6 +743,7 @@ a.another_other {
   width: 100%;
   height: 37px;
   padding: 0 13px 0 16px;
+  border: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -779,6 +801,10 @@ a.another_other {
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+}
+div.range-toggle:hover,
+div.range-toggle:active {
+  transform: scale(1.1,1.1);
 }
 
 .range-toggle-min {
@@ -856,7 +882,10 @@ a.another_other {
   cursor: pointer;
   border-radius: 50%;
 }
-
+.switch_page a.style_active_switch:active {
+  background-color: #ffffff;
+  color: black;
+}
 a.active_switch_page {
   background-color: #ffffff;
   color: black;
@@ -951,14 +980,14 @@ a.active_switch_page {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 39px;
 }
 
 .banners_event {
   width: 560px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 18px 0px 50px 20px;
+  padding: 18px 0px 22px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -975,6 +1004,7 @@ a.active_switch_page {
 
 .banners_event a {
   display: inline-block;
+  vertical-align: top;
   padding: 10px 20px 10px 21px;
   border-radius: 50px;
   margin: 25px 26px 0px 0;
@@ -999,7 +1029,7 @@ a.active_switch_page {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 li.shop_card_item {
@@ -1216,7 +1246,9 @@ li.shop_card_item:hover::before {
   z-index: 1;
 }
 
-.map_wrapper iframe {
+div.map_wrapper iframe {
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
   border: none;
@@ -1439,6 +1471,8 @@ a.basket_activity {
 }
 
 .signout {
+  width: 275px;
+  box-sizing: border-box;
   position: absolute;
   z-index: 1;
   right: -4px;
@@ -1508,6 +1542,9 @@ a.basket_activity {
 
 .social_link:hover path {
   fill: #ffffff;
+}
+.social_link:active path {
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .other_information {
@@ -1748,9 +1785,11 @@ div.not_spide_landing {
 }
 
 ul.bread_crumb {
+  width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 2px;
@@ -1825,9 +1864,14 @@ ul.bread_crumb {
   color: #323232;
   background-image: url('../img/icon-down-dir.svg');
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 93% 48%;
 }
-
+.choose_sort:hover {
+  color:#323232;
+  background-image: url('../img/icon-down-dir.svg');
+  background-repeat: no-repeat;
+  background-position: 93% 48%;
+}
 .cost_ice_cream {
   width: 215px;
 }
@@ -1864,6 +1908,7 @@ p.disc_fillers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1901,6 +1946,9 @@ input[type="radio"]:checked+.radio_indicator {
 input[type="radio"]:disabled+.radio_indicator, input[type="radio"]:disabled~.disabled_label_form {
   opacity: 0.8;
 }
+input[type="radio"]:focus+.radio_indicator {
+  outline: 1px solid aqua;
+}
 
 .bg_fatness>p:hover {
   opacity: 0.8;
@@ -1928,6 +1976,9 @@ input[type="checkbox"]:checked+.checkbox_indicator {
 
 input[type="checkbox"]:disabled+.checkbox_indicator, input[type="checkbox"]:disabled~.disabled_label_form {
   opacity: 0.8;
+}
+input[type="checkbox"]:focus+.checkbox_indicator {
+  outline: 1px solid aqua;
 }
 
 .bg_fillers>p:hover {
@@ -2088,6 +2139,34 @@ input[type="checkbox"]:disabled+.checkbox_indicator, input[type="checkbox"]:disa
   line-height: 24px;
   font-weight: bold;
 }
+.reset_order {
+  box-sizing: border-box;
+  width: 14px;
+}
+.img_basket_items {
+  box-sizing: border-box;
+  width: 35px;
+}
+.discription_basket {
+  box-sizing: border-box;
+  width: 241px;
+}
+.kg_ice_cream {
+  box-sizing: border-box;
+  width: 139px;
+}
+.cost_basket_item {
+  box-sizing: border-box;
+  width: 67px;
+}
+.basket_all_cost {
+  box-sizing: border-box;
+  width: 504px;
+}
+.final_basket {
+  box-sizing: border-box;
+  width: 504px;
+}
 
 .reset_order button {
   position: relative;
@@ -2120,4 +2199,16 @@ input[type="checkbox"]:disabled+.checkbox_indicator, input[type="checkbox"]:disa
   transform: rotate(-45deg);
   top: 2px;
   left: -6px;
+}
+
+.search input[type="search"]:hover,
+p.email_user_header input[type="email"]:hover ,
+p.password_users_header input[type="password"]:hover,
+.subscribe_forms input[type="email"]:hover ,
+.name_users input[type="text"]:hover,
+.email_user input[type="email"]:hover,
+.comment textarea:hover {
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(154, 154, 154, 0.52);
+  -moz-box-shadow:    0px 0px 0px 1px rgba(154, 154, 154, 0.52);
+  box-shadow:         0px 0px 0px 1px rgba(154, 154, 154, 0.52);
 }
