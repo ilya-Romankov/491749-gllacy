@@ -14,59 +14,44 @@ slider_btn_one.addEventListener("click", function() {
   slider_btn_one.classList.add('slider_btn_active_now');
   slider_btn_two.classList.remove('slider_btn_active_now');
   slider_btn_three.classList.remove('slider_btn_active_now');
-
   bg.classList.add('bg_slider_back_one');
   bg.classList.remove('bg_slider_back_two');
   bg.classList.remove('bg_slider_back_three');
-
   slider_one.classList.remove('visually-hidden');
   slider_two.classList.add('visually-hidden');
   slider_three.classList.add('visually-hidden');
-
   bg_ice_cream.classList.add('bg_ice_cream_one');
   bg_ice_cream.classList.remove('bg_ice_cream_two');
   bg_ice_cream.classList.remove('bg_ice_cream_three');
 });
-
 slider_btn_two.addEventListener("click", function() {
   slider_btn_one.classList.remove('slider_btn_active_now');
   slider_btn_two.classList.add('slider_btn_active_now');
   slider_btn_three.classList.remove('slider_btn_active_now');
-
   bg.classList.remove('bg_slider_back_one');
   bg.classList.add('bg_slider_back_two');
   bg.classList.remove('bg_slider_back_three');
-
   slider_one.classList.add('visually-hidden');
   slider_two.classList.remove('visually-hidden');
   slider_three.classList.add('visually-hidden');
-
   bg_ice_cream.classList.remove('bg_ice_cream_one');
   bg_ice_cream.classList.add('bg_ice_cream_two');
   bg_ice_cream.classList.remove('bg_ice_cream_three');
 });
-
 slider_btn_three.addEventListener("click", function() {
   slider_btn_one.classList.remove('slider_btn_active_now');
   slider_btn_two.classList.remove('slider_btn_active_now');
   slider_btn_three.classList.add('slider_btn_active_now');
-
   bg.classList.remove('bg_slider_back_one');
   bg.classList.remove('bg_slider_back_two');
   bg.classList.add('bg_slider_back_three');
-
   slider_one.classList.add('visually-hidden');
   slider_two.classList.add('visually-hidden');
   slider_three.classList.remove('visually-hidden');
-
   bg_ice_cream.classList.remove('bg_ice_cream_one');
   bg_ice_cream.classList.remove('bg_ice_cream_two');
   bg_ice_cream.classList.add('bg_ice_cream_three');
 });
-
-
-
-
 //popup
 var overlay = document.querySelector('body');
 var feedback_link = document.querySelector('.feedback_link');
@@ -82,15 +67,12 @@ feedback_link.addEventListener("click", function (evt) {
   overlay.classList.add("overlay");
   login_modal.focus();
 });
-
-
 close_feedback.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal_open.classList.remove("modal_task_feedback_show");
   overlay.classList.remove("overlay");
   modal_open.classList.remove('modal_error');
 });
-
 form.addEventListener("submit", function (evt) {
   if (!mail_modal.value || login_modal.value || textarea_modal.value) {
     evt.preventDefault();
@@ -99,5 +81,4 @@ form.addEventListener("submit", function (evt) {
     modal_open.classList.add('modal_error');
     console.log('Error: no value form');
   }
-
 });
