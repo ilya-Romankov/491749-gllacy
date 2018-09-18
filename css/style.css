@@ -251,6 +251,8 @@ a.another {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   width: 310px;
   height: 44px;
   font-size: 16px;
@@ -290,6 +292,8 @@ p.email_user_header input[type="email"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   width: 241px;
   height: 44px;
   font-size: 16px;
@@ -309,6 +313,8 @@ p.password_users_header input[type="password"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   width: 241px;
   height: 44px;
   font-size: 16px;
