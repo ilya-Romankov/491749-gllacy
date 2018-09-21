@@ -1480,7 +1480,7 @@ a.basket_activity {
   padding: 20px 15px 20px 16px;
   right: -3px;
   top: 35px;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   background-color: #ffffff;
   border-radius: 5px;
 }
@@ -2139,7 +2139,7 @@ a.off_switch {
   table-layout: fixed;
   padding-top: 20px;
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   z-index: 3;
 }
 
