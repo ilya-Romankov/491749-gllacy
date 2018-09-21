@@ -1401,6 +1401,7 @@ div.map_wrapper iframe {
 
 .user_menu_my_shop {
   position: relative;
+  padding-bottom: 15px;
 }
 
 .user_menu_my_shop>a {
@@ -1470,6 +1471,7 @@ a.basket_activity {
 
 .user_menu_search {
   position: relative;
+  padding-bottom: 14px;
 }
 
 .search {
@@ -1480,7 +1482,6 @@ a.basket_activity {
   padding: 20px 15px 20px 16px;
   right: -3px;
   top: 35px;
-  padding-bottom: 16px;
   background-color: #ffffff;
   border-radius: 5px;
 }
@@ -2139,7 +2140,6 @@ a.off_switch {
   table-layout: fixed;
   padding-top: 20px;
   padding-left: 20px;
-  padding-bottom: 14px;
   z-index: 3;
 }
 
