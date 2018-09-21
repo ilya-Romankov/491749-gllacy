@@ -74,7 +74,7 @@ close_feedback.addEventListener("click", function (evt) {
   modal_open.classList.remove('modal_error');
 });
 form.addEventListener("submit", function (evt) {
-  if (!mail_modal.value || login_modal.value || textarea_modal.value) {
+  if (!mail_modal.value || !login_modal.value || !textarea_modal.value) {
     evt.preventDefault();
     modal_open.classList.remove('modal_error');
     modal_open.offsetWidth = modal_open.offsetWidth;
