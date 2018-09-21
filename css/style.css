@@ -1999,7 +1999,7 @@ input[type="radio"]:focus+.radio_indicator {
   outline: 1px solid aqua;
 }
 
-.bg_fatness>p:not(input:disabled):hover {
+.bg_fatness label:not(.no_effect_form):hover {
   opacity: 0.8;
 }
 
@@ -2029,10 +2029,11 @@ input[type="checkbox"]:disabled+.checkbox_indicator, input[type="checkbox"]:disa
 input[type="checkbox"]:focus+.checkbox_indicator {
   outline: 1px solid aqua;
 }
-
-.bg_fillers>p:not(input:disabled):hover {
+.bg_fillers label:not(.no_effect_form):hover {
   opacity: 0.8;
 }
+
+
 .no_effect_form {
   cursor: not-allowed;
 }
