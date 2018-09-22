@@ -1755,7 +1755,7 @@ a.basket_activity {
   width: 10px;
   height: 10px;
   right: 25px;
-  top: 25px;
+  top: 15px;
   background-color: #ffffff;
 }
 
@@ -1764,7 +1764,7 @@ a.basket_activity {
   width: 20px;
   height: 2px;
   left: 0px;
-  top: -1px;
+  top: 10px;
   position: absolute;
   background-color: #323232;
 }
